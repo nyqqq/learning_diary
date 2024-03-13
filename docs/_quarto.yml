@@ -1,5 +1,9 @@
 project:
   type: book
+  
+output:
+  github_pages:
+    source_dir: docs
 
 book:
   title: "learning_diary_test"
