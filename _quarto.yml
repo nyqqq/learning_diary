@@ -6,9 +6,9 @@ output:
     source_dir: docs
 
 book:
-  title: "learning_diary_test"
-  author: "Norah Jones"
-  date: "3/13/2024"
+  title: "Learning Diary for Remotely Sensing Cities and Environment"
+  author: "Yuqing Niu"
+  date: "2/7/2024"
   chapters:
     - index.qmd
     - Week1.qmd
