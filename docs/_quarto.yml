@@ -11,7 +11,7 @@ book:
   date: "3/13/2024"
   chapters:
     - index.qmd
-    - Week.qmd
+    - Week1.qmd
 
 bibliography: references.bib
 
