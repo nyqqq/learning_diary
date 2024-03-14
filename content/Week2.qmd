@@ -1,3 +1,7 @@
 ---
 title: "Week2"
 ---
+
+`<iframe src="`{=html}<https://nyqqq.github.io/learning_diary/Slides.html>[`"`{=html}](https://yourusername.github.io/yourrepository/slides/mypresentation.html")` width="100%" height="400">`{=html}
+
+</iframe>
