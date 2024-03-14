@@ -1,9 +1,6 @@
 project:
   type: book
-  
-output:
-  github_pages:
-    source_dir: docs
+  output-dir: docs
 
 book:
   title: "Learning Diary for Remotely Sensing Cities and Environment"

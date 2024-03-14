@@ -91,13 +91,6 @@ if (TRUE) {
 }
 ```
 
-```{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) +
-  aes(mpg, disp) +
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
 ---
 
 .pull-left[
