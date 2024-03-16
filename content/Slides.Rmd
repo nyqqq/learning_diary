@@ -1,107 +1,191 @@
 ---
-title: "Presentation Ninja"
-subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
-institute: "RStudio, PBC"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+title: "LiDAR: Illumating our cities"
+author: "Yuqing Niu"
+institute: "Centre for Andvanced Spatial Analysis, UCL"
+date: "2024/3/14 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["metropolis", "metropolis-fonts", "default"]
     lib_dir: libs
+    css: ["default", "default-fonts", "my_style.css"]
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
 ---
+```{r setup, include=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields = c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("Slides.bib", check = FALSE)
+```
+#Introduction to LiDAR
 
-class: center, inverse
-background-image: url("`r xaringan:::karl`")
-background-position: center
-background-size: contain
+###What is it?
 
-##One slide.
-###Oh
+- LiDAR - <span style="color:red;">Li</span>ght <span style="color:red;">D</span>etection <span style="color:red;">a</span>nd <span style="color:red;">R</span>anging
+
+- Provide high resolution spatial point cloud data
+
+###How it works?
+- **Active** senor (Remember Week1!):Send laser light onto the target and measure the reflected light to recognize the variation in wavelength and arrival time.
+
+```{r  echo=FALSE, out.width='40%', fig.align='center'}
+knitr::include_graphics('image/LiDAR_work.jpeg')
+```
+Working principle of LiDAR. Source: https://flyguys.com/lidar-vs-radar/
 
 ---
 
-.pull-left[
-- One bullet.
+#History and development
 
-- Another bullet.
+```{r  echo=FALSE, out.width='64%', fig.align='center'}
+knitr::include_graphics('image/LiDAR_history.webp')
+
+```
+
+History and development of LiDAR. Source: https://www.reddit.com/r/equatortutorials/comments/1b3trbm/history_of_lidar/
+---
+
+#Two main types of LiDAR
+###Airborne
+
+Airbone LiDARs point **downwards** and scan 180 degrees of solid angle. Usually they are installed in an **aircraft** or a **helicopter**`r Citep(myBib, "mehendaleReviewLidarTechnology2020")`.
+
+.pull-left[
+- Topographic
+
+ - forestry
+ 
+ - urban planning
+ 
+ - landscape ecology
+
+- Bathymetric
+
+ - water penetration
+ ]
+ 
+.pull-right[
+![an image of airborne LiDAR](https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png)
+</figcaption>
+Airbone LiDAR. Source: https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png
+</figcaption>
+]
+---
+
+#Two main types of LiDAR
+###Terrestrial
+
+Terrestrial LiDARs perform the **horizontal** scan and cover 360 degrees in 1D and 2D. It collects points with high accuracy to enable precise identification of objects`r Citep(myBib, "mehendaleReviewLidarTechnology2020")`.
+
+.pull-left[
+- Mobile
+
+ - analyze road infrastructure
+ 
+ - locate incoming road signs
+
+- Static
+ - engineerning
+ 
+ - archaeology
+ 
+ - mining
 ]
 
 .pull-right[
-![an image](foo.png)
+![a image of terrestrial LiDAR](https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2)
+Terrestrial LiDAR. Source: https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2
 ]
 ---
 
-# Two dashes
+#Case study 1: Land Cover Classification
+###LiDAR used in natural environment
 
-The easiest way to build incremental slides is...
---
- to use two dashes `--` to separate content on a slide.
+1. The usage of LiDAR
 
---
+    Airbone LiDAR collected the elevation and intensity data. No need for manipulating multispectral image files.
+    
+1. Methodology
 
-You can divide a slide in _any way you want_.
-
---
-
-- One bullet
-
-- Another bullet
-
---
-
-- And one more
-
---
-
-.center[
-![Saw](https://slides.yihui.name/gif/saw-branch.gif)
-
-Don't saw your slides too hard.
-]
-
----
+    Based on the collected data, using a supervised object-orientated approach and frequency distribution parameters (skewness and kurtosis) to classify forest and ground type at three meanders of the Garonne and Allier rivers in France.`r Citep(myBib, "antonarakisObjectbasedLandCover2008")`
 
 
 
-The holy passion of Friendship is of so sweet and steady
-and loyal and enduring a nature that it will last through
-a whole lifetime...
+```{r  echo=FALSE, out.width='45%', fig.align='center'}
+knitr::include_graphics('image/forest_classification.png')
 
-???
-
-_if not asked to lend money_.
-
---- Mark Twain
-
----
-
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
 ```
 
 ---
 
+#Case study 2: Land Cover Classification
+###LiDAR used in urban areas
+
+1. The usage of LiDAR
+
+    Airbone LiDAR collected the elevation and intensity data of the first and last return.
+    
+1. Methodology
+
+    Using the difference of the elevation and intensity of two times to classify land cover types at the object level in urban areas in Cambridge`r Citep(myBib, "chenObjectBasedMethodUrban2014")`.
+
+```{r  echo=FALSE, out.width='68%', fig.align='center'}
+knitr::include_graphics('image/urban_classification.png')
+
+```
+---
+
+# Advantages and Limitations
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advantages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Limitations
 .pull-left[
-* list1
-* list2
+- **High Precision**: Delivers detailed 3D data with excellent accuracy;
+
+- **Efficient Coverage**: Quickly scans vast terrains;
+
+- **Night Operation**: Reveals ground surface beneath canopies;
+
+- **Operational Flexibility**: Functions in darkness or low light`r Citep(myBib, "StrengthsLimitationsLiDAR")`.
 ]
 
 .pull-right[
-1. first item
-1. first item
-]
 
-$$NDVI= \frac{NIR-Red}{NIR+Red}$$
-$$Wetness=0.1509(B2)+0.1973(B3)\\+0.3279(B4)+0.3406(B8)\\-0.7112(B11)-0.4572(B12)$$
+- **Data Complexity**: Demands advanced processing of dense 3D data;
+
+- **Vegetation Density Challenge**: Struggles with extremely dense foliage;
+
+- **High Cost**: Significant investment in equipment and analysis;
+
+- **Lack of Color**: Requires additional data for detailed interpretation`r Citep(myBib, "StrengthsLimitationsLiDAR2024")`.
+
+]
+---
+
+# The future of LiDAR in urban sensing
+1. **3D Urban Modeling**: Advances in LiDAR enable precise 3D modeling of cityscapes for planning and management;
+
+2. **Ecosystem & Weather Insights**:  LiDAR provides detailed insights into urban ecosystems and weather patterns, aiding in better forecasting;
+
+3. **Infrastructure Monitoring**: Essential for assessing and ensuring the safety of urban infrastructure like bridges and building;
+
+4. **Challenges & Opportunities**: Addressing data complexity and cost, with innovations and networked LiDAR systems presenting new opportunities`r Citep(myBib, "wangChallengesOpportunitiesLidar2021")`.
+
+```{r  echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics('image/LiDAR_London.jpeg')
+
+```
+<figcaption>
+LiDAR 3D model of London. Source: https://upload.wikimedia.org/wikipedia/commons/0/03/Lidar_3D_Model_of_London.jpg
+</figcaption>
+---
+
+#References
+
+```{r ref-list, echo=FALSE, results='asis', warning=FALSE}
+PrintBibliography(myBib)
+```

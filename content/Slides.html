@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>LiDAR: Illumating our cities</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yuqing Niu" />
+    <script src="libs/header-attrs-2.26/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my_style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# LiDAR: Illumating our cities
+]
+.author[
+### Yuqing Niu
+]
+.institute[
+### Centre for Andvanced Spatial Analysis, UCL
+]
+.date[
+### 2024/3/14 (updated: 2024-03-16)
+]
+
+---
+
+
+#Introduction to LiDAR
+
+###What is it?
+
+- LiDAR - &lt;span style="color:red;"&gt;Li&lt;/span&gt;ght &lt;span style="color:red;"&gt;D&lt;/span&gt;etection &lt;span style="color:red;"&gt;a&lt;/span&gt;nd &lt;span style="color:red;"&gt;R&lt;/span&gt;anging
+
+- Provide high resolution spatial point cloud data
+
+###How it works?
+- **Active** senor (Remember Week1!):Send laser light onto the target and measure the reflected light to recognize the variation in wavelength and arrival time.
+
+&lt;img src="image/LiDAR_work.jpeg" width="40%" style="display: block; margin: auto;" /&gt;
+Working principle of LiDAR. Source: https://flyguys.com/lidar-vs-radar/
+
+---
+
+#History and development
+
+&lt;img src="image/LiDAR_history.webp" width="64%" style="display: block; margin: auto;" /&gt;
+
+History and development of LiDAR. Source: https://www.reddit.com/r/equatortutorials/comments/1b3trbm/history_of_lidar/
+---
+
+#Two main types of LiDAR
+###Airborne
+
+Airbone LiDARs point **downwards** and scan 180 degrees of solid angle. Usually they are installed in an **aircraft** or a **helicopter**([Mehendale and Neoge, 2020](#bib-mehendaleReviewLidarTechnology2020)).
+
+.pull-left[
+- Topographic
+
+ - forestry
+ 
+ - urban planning
+ 
+ - landscape ecology
+
+- Bathymetric
+
+ - water penetration
+ ]
+ 
+.pull-right[
+![an image of airborne LiDAR](https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png)
+&lt;/figcaption&gt;
+Airbone LiDAR. Source: https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png
+&lt;/figcaption&gt;
+]
+---
+
+#Two main types of LiDAR
+###Terrestrial
+
+Terrestrial LiDARs perform the **horizontal** scan and cover 360 degrees in 1D and 2D. It collects points with high accuracy to enable precise identification of objects([Mehendale and Neoge, 2020](#bib-mehendaleReviewLidarTechnology2020)).
+
+.pull-left[
+- Mobile
+
+ - analyze road infrastructure
+ 
+ - locate incoming road signs
+
+- Static
+ - engineerning
+ 
+ - archaeology
+ 
+ - mining
+]
+
+.pull-right[
+![a image of terrestrial LiDAR](https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2)
+Terrestrial LiDAR. Source: https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2
+]
+---
+
+#Case study 1: Land Cover Classification
+###LiDAR used in natural environment
+
+1. The usage of LiDAR
+
+    Airbone LiDAR collected the elevation and intensity data. No need for manipulating multispectral image files.
+    
+1. Methodology
+
+    Based on the collected data, using a supervised object-orientated approach and frequency distribution parameters (skewness and kurtosis) to classify forest and ground type at three meanders of the Garonne and Allier rivers in France.([Antonarakis, Richards, and Brasington, 2008](#bib-antonarakisObjectbasedLandCover2008))
+
+
+
+&lt;img src="image/forest_classification.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+
+#Case study 2: Land Cover Classification
+###LiDAR used in urban areas
+
+1. The usage of LiDAR
+
+    Airbone LiDAR collected the elevation and intensity data of the first and last return.
+    
+1. Methodology
+
+    Using the difference of the elevation and intensity of two times to classify land cover types at the object level in urban areas in Cambridge([Chen and Gao, 2014](#bib-chenObjectBasedMethodUrban2014)).
+
+&lt;img src="image/urban_classification.png" width="68%" style="display: block; margin: auto;" /&gt;
+---
+
+# Advantages and Limitations
+###&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Advantages&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Limitations
+.pull-left[
+- **High Precision**: Delivers detailed 3D data with excellent accuracy;
+
+- **Efficient Coverage**: Quickly scans vast terrains;
+
+- **Night Operation**: Reveals ground surface beneath canopies;
+
+- **Operational Flexibility**: Functions in darkness or low light.
+]
+
+.pull-right[
+
+- **Data Complexity**: Demands advanced processing of dense 3D data;
+
+- **Vegetation Density Challenge**: Struggles with extremely dense foliage;
+
+- **High Cost**: Significant investment in equipment and analysis;
+
+- **Lack of Color**: Requires additional data for detailed interpretation([Scout
+Aerial, 2024](#bib-StrengthsLimitationsLiDAR2024)).
+
+]
+---
+
+# The future of LiDAR in urban sensing
+1. **3D Urban Modeling**: Advances in LiDAR enable precise 3D modeling of cityscapes for planning and management;
+
+2. **Ecosystem &amp; Weather Insights**:  LiDAR provides detailed insights into urban ecosystems and weather patterns, aiding in better forecasting;
+
+3. **Infrastructure Monitoring**: Essential for assessing and ensuring the safety of urban infrastructure like bridges and building;
+
+4. **Challenges &amp; Opportunities**: Addressing data complexity and cost, with innovations and networked LiDAR systems presenting new opportunities([Wang and Menenti, 2021](#bib-wangChallengesOpportunitiesLidar2021)).
+
+&lt;img src="image/LiDAR_London.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;figcaption&gt;
+LiDAR 3D model of London. Source: https://upload.wikimedia.org/wikipedia/commons/0/03/Lidar_3D_Model_of_London.jpg
+&lt;/figcaption&gt;
+---
+
+#References
+
+&lt;a name=bib-antonarakisObjectbasedLandCover2008&gt;&lt;/a&gt;[Antonarakis, A., K.
+Richards, and J. Brasington](#cite-antonarakisObjectbasedLandCover2008)
+(2008). "Object-Based Land Cover Classification Using Airborne LiDAR". In:
+_Remote Sensing of Environment_ 112.6, pp. 2988-2998.
+
+&lt;a name=bib-chenObjectBasedMethodUrban2014&gt;&lt;/a&gt;[Chen, Z. and B.
+Gao](#cite-chenObjectBasedMethodUrban2014) (2014). "An Object-Based Method for
+Urban Land Cover Classification Using Airborne Lidar Data". In: _IEEE Journal
+of Selected Topics in Applied Earth Observations and Remote Sensing_ 7.10, pp.
+4243-4254.
+
+&lt;a name=bib-mehendaleReviewLidarTechnology2020&gt;&lt;/a&gt;[Mehendale, N. and S.
+Neoge](#cite-mehendaleReviewLidarTechnology2020) (2020). "Review on Lidar
+Technology". In: _SSRN Electronic Journal_.
+
+&lt;a name=bib-StrengthsLimitationsLiDAR2024&gt;&lt;/a&gt;[Scout
+Aerial](#cite-StrengthsLimitationsLiDAR2024) (2024). _Strengths and
+Limitations of LiDAR_.
+
+&lt;a name=bib-wangChallengesOpportunitiesLidar2021&gt;&lt;/a&gt;[Wang, Z. and M.
+Menenti](#cite-wangChallengesOpportunitiesLidar2021) (2021). "Challenges and
+Opportunities in Lidar Remote Sensing". In: _Frontiers in Remote Sensing_ 2,
+p. 641723.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
