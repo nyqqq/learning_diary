@@ -37,8 +37,7 @@ myBib <- ReadBib("Slides.bib", check = FALSE)
 ```{r  echo=FALSE, out.width='40%', fig.align='center'}
 knitr::include_graphics('image/LiDAR_work.jpeg')
 ```
-Working principle of LiDAR. Source: https://flyguys.com/lidar-vs-radar/
-
+.small[Working principle of LiDAR. Source:[flyguys](https://flyguys.com/lidar-vs-radar/l)]
 ---
 
 #History and development
@@ -47,8 +46,7 @@ Working principle of LiDAR. Source: https://flyguys.com/lidar-vs-radar/
 knitr::include_graphics('image/LiDAR_history.webp')
 
 ```
-
-History and development of LiDAR. Source: https://www.reddit.com/r/equatortutorials/comments/1b3trbm/history_of_lidar/
+.small[History and development of LiDAR. Source:[reddit](https://www.reddit.com/r/equatortutorials/comments/1b3trbm/history_of_lidar/)]
 ---
 
 #Two main types of LiDAR
@@ -72,9 +70,7 @@ Airbone LiDARs point **downwards** and scan 180 degrees of solid angle. Usually 
  
 .pull-right[
 ![an image of airborne LiDAR](https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png)
-</figcaption>
-Airbone LiDAR. Source: https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png
-</figcaption>
+.small[Airbone LiDAR. Source:[lidarnews](https://lidarnews.com/wp-content/uploads/2018/10/Figure-1-Aerial-Laser-Altimeter-420x315.png)]
 ]
 ---
 
@@ -100,7 +96,7 @@ Terrestrial LiDARs perform the **horizontal** scan and cover 360 degrees in 1D a
 
 .pull-right[
 ![a image of terrestrial LiDAR](https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2)
-Terrestrial LiDAR. Source: https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2
+.small[Terrestrial LiDAR. Source:[earthobservatory](https://earthobservatory.sg/images/default-source/facilities-images/new/facilities-lidar9bda408c1ed3442782fd7063b8648ade.jpeg?sfvrsn=f5090475_2)]
 ]
 ---
 
@@ -179,9 +175,8 @@ knitr::include_graphics('image/urban_classification.png')
 knitr::include_graphics('image/LiDAR_London.jpeg')
 
 ```
-<figcaption>
-LiDAR 3D model of London. Source: https://upload.wikimedia.org/wikipedia/commons/0/03/Lidar_3D_Model_of_London.jpg
-</figcaption>
+.small[LiDAR 3D model of London. Source: [wikimedia](https://upload.wikimedia.org/wikipedia/commons/0/03/Lidar_3D_Model_of_London.jpg)]
+
 ---
 
 #References
