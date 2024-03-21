@@ -3,9 +3,6 @@ title: "Hello Remote Sensing!"
 ---
 This is the first week of our exciting lesson on remote sensing. I will start with some basic and important concepts to tell what is remote sensing and how it works. I will try to explain the terms which might seem scaring as clearly as possible. Sounds interesting, doesn't it? 
 
-## Dictionary
-
-
 ## What is remote sensing?
 NASA defines remote sensing as acquiring information from a distance. Basically, this means there's no physical interaction between the sensors and the object. It involves observing and collecting data about Earth's surface. 
 
@@ -14,16 +11,19 @@ Remote sensing allows us to see beyond what the human eye can detect. For instan
 ## How it works?
 Remote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:
 
-1. Energy Source: An energy source, usually the sun or sensors, provides electromagnetic radiation that illuminates the Earth's surface.
+1. Energy source: An energy source, usually the sun or sensors, provides electromagnetic radiation (1.2.2) that illuminates the Earth's surface.
 
-2. Radiation and the Atmosphere: The Earth's atmosphere interacts with the incoming radiation, absorbing some wavelengths while allowing others to pass through.
+2. Radiation and the atmosphere: The Earth's atmosphere interacts with the incoming radiation, absorbing or scattering (1.2.3) some wavelengths while allowing others to pass through.
 
-3. Interaction with Earth's Surface: When the radiation reaches the Earth's surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.
+3. Interaction with Earth's surface (1.2.4): When the radiation reaches the Earth's surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.
 
-4. Detection by Sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.
+4. Detection by sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.
 
-5. Analysis
+5. Analysis using SNAP and R
 
+```{r  echo=FALSE, out.width='80%', fig.align='center', fig.cap="Source: [geoinfotech](https://geoinfotech.ng/techniques-of-remote-sensing/)"}
+knitr::include_graphics('image/how_it_works.png')
+```
 ### Sensors
 Sensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth's surface.
 
@@ -34,19 +34,57 @@ There are two type of sensors:
 - **Active**: Have an energy source which emits electromagnetic waves and then waits to receive
 
 ### Electromagnetic waves
-
+The electromagnetic spectrum is a broad classification that organizes electromagnetic waves according to their wavelengths and frequencies. It ranges from very short wavelengths, such as gamma rays and X-rays, to very long wavelengths, like radio waves. The visible spectrum, which can be detected by the human eye, is just a small part of the entire electromagnetic spectrum.
 ```{r  echo=FALSE, out.width='80%', fig.align='center', fig.cap="Source: [OnlineLearningCollege](https://online-learning-college.com/knowledge-hub/gcses/gcse-physics-help/electromagnetic-spectrum/)"}
 knitr::include_graphics('image/spectrum.jpeg')
 ```
+Emitted electromagnetic radiation with different wavelengths (bands) interacts with the surface materials and is then reflected back to the sensor. By analyzing the reflected signals, which vary across different materials due to their distinct reflectance properties, active sensors can identify and distinguish between various types of land cover. For example, vegetation absorbing most visible light for photosynthesis but reflecting much of the near-infrared light.
 
-## Scattering
+*Electromagnetic waves are part of electromagnetic radiation. However, sometimes they can be seen as the same.*
 
-### Why is the sky blue?
+### Scattering
+Scattering, a process where particles deflect incoming light in various directions, affects how we perceive color in our environment.
 
-### Why is the ocean blue?
+#### Why is the sky blue?
+There are three types of atmospheric scattering:
 
-**Think**:
+- Rayleigh = particles are very small compared to the wavelength
+- Mie = particles are the same size compared to the wavelength
+- Non selective = particles are much larger than the wavelength
+Sunlight is scattered by particles in the atmosphere
 
-1. Why does the moon have a black sky?
+The sky appears blue due to Rayleigh scattering of shorter - blue - wavelengths by atmospheric particles. However, at sunrise or sunset there is much more atmosphere to pass through so more scattering occurs and red and orange light reach our eyes instead of blue.
 
-2. Why does the healthy plant in daily life look green? Is it the same principle as above?
+
+#### Why is the ocean blue?
+Similarly, the ocean's blue color results from the water's absorption of longer wavelengths and scattering of blue light. Shallow water can is clear as not many molecules scatter the light. And deeper ocean with more molecules scattering will appear blue.
+
+```{r  echo=FALSE, out.width='80%', fig.align='center', fig.cap="Left:shallow water. Right: deep water Source: [wordsinmocean](https://wordsinmocean.com/2015/10/21/if-water-is-clear-why-is-the-ocean-blue//)"}
+knitr::include_graphics('image/water.jpeg')
+```
+
+**Think**: Why does the moon have a black sky?
+
+### Interacting with Earth's surface
+The Bidirectional Reflectance Distribution Function (BRDF) describes how light is reflected at different angles, affecting the appearance of Earth's surface from space.
+
+## Resolutions
+
+- Spatial resolution: The size of one pixel on the ground.
+- Spectral resolution: The number of spectral bands that a sensor can measure.
+  - We can take reflectance for each wavelength (or a band of several wavelengths) across the electromagnetic spectrum to create a spectral signature. Every feature on Earth will have a unique spectral signature.
+```{r  echo=FALSE, out.width='80%', fig.align='center', fig.cap="Source: [reasearchgate](https://www.researchgate.net/figure/Spectral-signatures-as-functions-of-wavelength-for-five-typical-surfaces-The-central_fig4_318843407)"}
+knitr::include_graphics('image/spectral_signature.png')
+```
+- Temporal resolution: How often a sensor acquires data over the same location.
+- Radiometric resolution: The sensitivity of a sensor to variations in signal strength due to different brightness levels that can be recorded by the sensor in each spectral band.
+
+## Something about the practical
+### Landsat and Sentinel
+Landsat and Sentinel are both satellite programs used for Earth observation. Landsat, a joint program of NASA and the US Geological Survey, has been providing continuous global coverage since the 1970s. On the other hand, the Sentinel satellites are part of the European Union's Copernicus program, designed for environmental monitoring with a more frequent revisit time. 
+
+If we need to compare the data from Landsat and Sentinel of a study area, the thing has to be aware of is the band of Landsat is wider than Sentinel.
+
+## Applications of 
+
+## Reflections

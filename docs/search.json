@@ -4,7 +4,7 @@
     "href": "Week1.html",
     "title": "1  Hello Remote Sensing!",
     "section": "",
-    "text": "1.1 Dictionary",
+    "text": "1.1 What is remote sensing?\nNASA defines remote sensing as acquiring information from a distance. Basically, this means there’s no physical interaction between the sensors and the object. It involves observing and collecting data about Earth’s surface.\nRemote sensing allows us to see beyond what the human eye can detect. For instance, we can generate detailed topographic maps of the Earth’s surface although we haven’t been there. This capability enables us to easily distinguish between different land cover types such as urban areas, oceans, and vegetation, providing invaluable information for environmental monitoring, urban planning, agriculture, and various other applications.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]
@@ -22,11 +22,11 @@
   {
     "objectID": "Week2.html",
     "href": "Week2.html",
-    "title": "2  Week2",
+    "title": "2  LiDAR",
     "section": "",
-    "text": "aaa",
+    "text": "This week I will introduce LiDAR, an active sensor. The cool slide is made by Xaringan package.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week2</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>LiDAR</span>"
     ]
   },
   {
@@ -64,7 +64,7 @@
     "href": "Week3.html#dictionary",
     "title": "3  Touch the Essense of Data",
     "section": "",
-    "text": "Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.\nDigital number (DN): Raw data collected by satellites, representing the brightness values of images.\nIrradiance: The amount of radiation from sun to the earth surface.\nPath radiance: Radiance that is reflected above the surface.\nRadiance: The amount of radiation from earth surface to the sensor.\nMosaicking: The process to merge two images.\nNadir: The direction pointing directly downwards from the sensor, with no angular deviation.",
+    "text": "Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.\nDigital number (DN): Raw data collected by satellites, representing the brightness values of images.\nIrradiance: The amount of radiation from sun to the earth surface.\nPath radiance: Radiance that is reflected above the surface.\nRadiance: The amount of radiation from earth surface to the sensor.\nReflectance: The ratio of light leaving to light striking. It’s the property of the material.\nMosaicking: The process to merge two images.\nNadir: The direction pointing directly downwards from the sensor, with no angular deviation.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "Week3.html#corrections",
     "title": "3  Touch the Essense of Data",
     "section": "3.3 Corrections",
-    "text": "3.3 Corrections\n\n3.3.1 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip. The first station is atmosphere, then the ground (surface of the earth) which is covered by different materials and then experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction\n\n\n\n3.3.2 Geometric correction\nData may be distorted because of several factors:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of the earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image;\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nGeometric correction procedures. Source: researchgate\n\n\n\n\nThink: Which way is better?\n\n\n3.3.3 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it (Remember Week 1: Why is sky blue?). Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.\nThere are three types:\n\nRelative\n\n\nDark object subtraction (DOS): assume the darkest value of pixel in the image should be 0;\nPseudo-invariant features (PIFs): linear regression with the coefficients calculating from objects not change.\n\n\nAbsolute\n\nIt involves converting digital brightness values to scaled surface reflectance, facilitating comparisons across different regions of the planet. This is achieved through atmospheric radiative transfer models, such as MODTRAN 4+ and Py6S.\n\nEmpirical life correction\n\n\\[\nReflectance (field spectrum) = gain × radiance (input data) + offset\n\\] whew gain is atmospheric attenuation, offset is path radiance. We often choose a light object and a dark object on site and use the measured reflectance to calculate the empirical line, and then apply the line to all things.\n\n\n\n\n\nExample of an empirical line using two targets of contrasting albedo. Source: researchgate\n\n\n\n\n\n\n3.3.4 Orthorectification/topographic correction\nThe purpose of orthorectification correction is to make pixels viewed at nadiar.\nSolar zenith and solar azimuth describing the illumination source will be used in the formula.\n\n\n\n\n\nSolar zenith and solar azimuth Source: catalyst.earth\n\n\n\n\n\n\n3.3.5 Summary of corrections\n\n\n3.3.6 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.",
+    "text": "3.3 Corrections\n\n3.3.1 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip (REMEMBER WEEK 1). The first station is atmosphere, then the ground which is covered by different materials and experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction\n\n\n\n3.3.2 Geometric correction\nData may be distorted because of several factors:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of the earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image;\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nGeometric correction procedures. Source: researchgate\n\n\n\n\nThink: Which way is better?\n\n\n3.3.3 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it. Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.\nThere are three types:\n\nRelative\n\n\nDark object subtraction (DOS): assume the darkest value of pixel in the image should be 0;\nPseudo-invariant features (PIFs): linear regression with the coefficients calculating from objects not change.\n\n\nAbsolute\n\nIt involves converting digital brightness values to scaled surface reflectance, facilitating comparisons across different regions of the planet. This is achieved through atmospheric radiative transfer models, such as MODTRAN 4+ and Py6S.\n\nEmpirical life correction\n\n\\[\nReflectance (field spectrum) = gain × radiance (input data) + offset\n\\] whew gain is atmospheric attenuation, offset is path radiance. We often choose a light object and a dark object on site and use the measured reflectance to calculate the empirical line, and then apply the line to all things.\n\n\n\n\n\nExample of an empirical line using two targets of contrasting albedo. Source: researchgate\n\n\n\n\n\n\n3.3.4 Orthorectification/topographic correction\nThe purpose of orthorectification correction is to make pixels viewed at nadiar.\nSolar zenith and solar azimuth describing the illumination source will be used in the formula.\n\n\n\n\n\nSolar zenith and solar azimuth Source: catalyst.earth\n\n\n\n\n\n\n3.3.5 Summary of corrections\n\n\n3.3.6 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -203,8 +203,8 @@
     "objectID": "Week1.html#how-it-works",
     "href": "Week1.html#how-it-works",
     "title": "1  Hello Remote Sensing!",
-    "section": "1.3 How it works?",
-    "text": "1.3 How it works?\nRemote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:\n\nEnergy Source: An energy source, usually the sun or sensors, provides electromagnetic radiation that illuminates the Earth’s surface.\nRadiation and the Atmosphere: The Earth’s atmosphere interacts with the incoming radiation, absorbing some wavelengths while allowing others to pass through.\nInteraction with Earth’s Surface: When the radiation reaches the Earth’s surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.\nDetection by Sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.\nAnalysis\n\n\n1.3.1 Sensors\nSensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth’s surface.\nThere are two type of sensors:\n\nPassive: Don’t emit anything and detect reflected energy from the sun which is in electromagnetic waves;\nActive: Have an energy source which emits electromagnetic waves and then waits to receive\n\n\n\n1.3.2 Electromagnetic waves\n\n\n\n\n\nSource: OnlineLearningCollege",
+    "section": "1.2 How it works?",
+    "text": "1.2 How it works?\nRemote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:\n\nEnergy source: An energy source, usually the sun or sensors, provides electromagnetic radiation (1.2.2) that illuminates the Earth’s surface.\nRadiation and the atmosphere: The Earth’s atmosphere interacts with the incoming radiation, absorbing or scattering (1.2.3) some wavelengths while allowing others to pass through.\nInteraction with Earth’s surface (1.2.4): When the radiation reaches the Earth’s surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.\nDetection by sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.\nAnalysis using SNAP and R\n\n\n\n\n\n\nSource: geoinfotech\n\n\n\n\n\n1.2.1 Sensors\nSensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth’s surface.\nThere are two type of sensors:\n\nPassive: Don’t emit anything and detect reflected energy from the sun which is in electromagnetic waves;\nActive: Have an energy source which emits electromagnetic waves and then waits to receive\n\n\n\n1.2.2 Electromagnetic waves\nThe electromagnetic spectrum is a broad classification that organizes electromagnetic waves according to their wavelengths and frequencies. It ranges from very short wavelengths, such as gamma rays and X-rays, to very long wavelengths, like radio waves. The visible spectrum, which can be detected by the human eye, is just a small part of the entire electromagnetic spectrum.\n\n\n\n\n\nSource: OnlineLearningCollege\n\n\n\n\nEmitted electromagnetic radiation with different wavelengths (bands) interacts with the surface materials and is then reflected back to the sensor. By analyzing the reflected signals, which vary across different materials due to their distinct reflectance properties, active sensors can identify and distinguish between various types of land cover. For example, vegetation absorbing most visible light for photosynthesis but reflecting much of the near-infrared light.\nElectromagnetic waves are part of electromagnetic radiation. However, sometimes they can be seen as the same.\n\n\n1.2.3 Scattering\nScattering, a process where particles deflect incoming light in various directions, affects how we perceive color in our environment.\n\n1.2.3.1 Why is the sky blue?\nThere are three types of atmospheric scattering:\n\nRayleigh = particles are very small compared to the wavelength\nMie = particles are the same size compared to the wavelength\nNon selective = particles are much larger than the wavelength Sunlight is scattered by particles in the atmosphere\n\nThe sky appears blue due to Rayleigh scattering of shorter - blue - wavelengths by atmospheric particles. However, at sunrise or sunset there is much more atmosphere to pass through so more scattering occurs and red and orange light reach our eyes instead of blue.\n\n\n1.2.3.2 Why is the ocean blue?\nSimilarly, the ocean’s blue color results from the water’s absorption of longer wavelengths and scattering of blue light. Shallow water can is clear as not many molecules scatter the light. And deeper ocean with more molecules scattering will appear blue.\n\n\n\n\n\nLeft:shallow water. Right: deep water Source: wordsinmocean\n\n\n\n\nThink: Why does the moon have a black sky?\n\n\n\n1.2.4 Interacting with Earth’s surface\nThe Bidirectional Reflectance Distribution Function (BRDF) describes how light is reflected at different angles, affecting the appearance of Earth’s surface from space.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]
@@ -225,6 +225,46 @@
     "title": "1  Hello Remote Sensing!",
     "section": "1.2 What is remote sensing?",
     "text": "1.2 What is remote sensing?\nNASA defines remote sensing as acquiring information from a distance. Basically, this means there’s no physical interaction between the sensors and the object. It involves observing and collecting data about Earth’s surface.\nRemote sensing allows us to see beyond what the human eye can detect. For instance, we can generate detailed topographic maps of the Earth’s surface although we haven’t been there. This capability enables us to easily distinguish between different land cover types such as urban areas, oceans, and vegetation, providing invaluable information for environmental monitoring, urban planning, agriculture, and various other applications.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#resolutions",
+    "href": "Week1.html#resolutions",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.3 Resolutions",
+    "text": "1.3 Resolutions\n\nSpatial resolution: The size of one pixel on the ground.\nSpectral resolution: The number of spectral bands that a sensor can measure.\n\nWe can take reflectance for each wavelength (or a band of several wavelengths) across the electromagnetic spectrum to create a spectral signature. Every feature on Earth will have a unique spectral signature.\n\n\n\n\n\n\n\nSource: reasearchgate\n\n\n\n\n\nTemporal resolution: How often a sensor acquires data over the same location.\nRadiometric resolution: The sensitivity of a sensor to variations in signal strength due to different brightness levels that can be recorded by the sensor in each spectral band.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#applications-of",
+    "href": "Week1.html#applications-of",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.5 Applications of",
+    "text": "1.5 Applications of",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#reflections",
+    "href": "Week1.html#reflections",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.6 Reflections",
+    "text": "1.6 Reflections",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#something-about-the-practical",
+    "href": "Week1.html#something-about-the-practical",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.4 Something about the practical",
+    "text": "1.4 Something about the practical\n\n1.4.1 Landsat and Sentinel\nLandsat and Sentinel are both satellite programs used for Earth observation. Landsat, a joint program of NASA and the US Geological Survey, has been providing continuous global coverage since the 1970s. On the other hand, the Sentinel satellites are part of the European Union’s Copernicus program, designed for environmental monitoring with a more frequent revisit time.\nIf we need to compare the data from Landsat and Sentinel of a study area, the thing has to be aware of is the band of Landsat is wider than Sentinel.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]

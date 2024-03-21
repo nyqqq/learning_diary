@@ -140,18 +140,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#dictionary" id="toc-dictionary" class="nav-link active" data-scroll-target="#dictionary"><span class="header-section-number">1.1</span> Dictionary</a></li>
-  <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">1.2</span> What is remote sensing?</a></li>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works"><span class="header-section-number">1.3</span> How it works?</a>
+  <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link active" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">1.1</span> What is remote sensing?</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works"><span class="header-section-number">1.2</span> How it works?</a>
   <ul class="collapse">
-  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors"><span class="header-section-number">1.3.1</span> Sensors</a></li>
-  <li><a href="#electromagnetic-waves" id="toc-electromagnetic-waves" class="nav-link" data-scroll-target="#electromagnetic-waves"><span class="header-section-number">1.3.2</span> Electromagnetic waves</a></li>
+  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors"><span class="header-section-number">1.2.1</span> Sensors</a></li>
+  <li><a href="#electromagnetic-waves" id="toc-electromagnetic-waves" class="nav-link" data-scroll-target="#electromagnetic-waves"><span class="header-section-number">1.2.2</span> Electromagnetic waves</a></li>
+  <li><a href="#scattering" id="toc-scattering" class="nav-link" data-scroll-target="#scattering"><span class="header-section-number">1.2.3</span> Scattering</a></li>
+  <li><a href="#interacting-with-earths-surface" id="toc-interacting-with-earths-surface" class="nav-link" data-scroll-target="#interacting-with-earths-surface"><span class="header-section-number">1.2.4</span> Interacting with Earth’s surface</a></li>
   </ul></li>
-  <li><a href="#scattering" id="toc-scattering" class="nav-link" data-scroll-target="#scattering"><span class="header-section-number">1.4</span> Scattering</a>
+  <li><a href="#resolutions" id="toc-resolutions" class="nav-link" data-scroll-target="#resolutions"><span class="header-section-number">1.3</span> Resolutions</a></li>
+  <li><a href="#something-about-the-practical" id="toc-something-about-the-practical" class="nav-link" data-scroll-target="#something-about-the-practical"><span class="header-section-number">1.4</span> Something about the practical</a>
   <ul class="collapse">
-  <li><a href="#why-is-the-sky-blue" id="toc-why-is-the-sky-blue" class="nav-link" data-scroll-target="#why-is-the-sky-blue"><span class="header-section-number">1.4.1</span> Why is the sky blue?</a></li>
-  <li><a href="#why-is-the-ocean-blue" id="toc-why-is-the-ocean-blue" class="nav-link" data-scroll-target="#why-is-the-ocean-blue"><span class="header-section-number">1.4.2</span> Why is the ocean blue?</a></li>
+  <li><a href="#landsat-and-sentinel" id="toc-landsat-and-sentinel" class="nav-link" data-scroll-target="#landsat-and-sentinel"><span class="header-section-number">1.4.1</span> Landsat and Sentinel</a></li>
   </ul></li>
+  <li><a href="#applications-of" id="toc-applications-of" class="nav-link" data-scroll-target="#applications-of"><span class="header-section-number">1.5</span> Applications of</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">1.6</span> Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -178,26 +181,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is the first week of our exciting lesson on remote sensing. I will start with some basic and important concepts to tell what is remote sensing and how it works. I will try to explain the terms which might seem scaring as clearly as possible. Sounds interesting, doesn’t it?</p>
-<section id="dictionary" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="dictionary"><span class="header-section-number">1.1</span> Dictionary</h2>
-</section>
-<section id="what-is-remote-sensing" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-remote-sensing"><span class="header-section-number">1.2</span> What is remote sensing?</h2>
+<section id="what-is-remote-sensing" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-remote-sensing"><span class="header-section-number">1.1</span> What is remote sensing?</h2>
 <p>NASA defines remote sensing as acquiring information from a distance. Basically, this means there’s no physical interaction between the sensors and the object. It involves observing and collecting data about Earth’s surface.</p>
 <p>Remote sensing allows us to see beyond what the human eye can detect. For instance, we can generate detailed topographic maps of the Earth’s surface although we haven’t been there. This capability enables us to easily distinguish between different land cover types such as urban areas, oceans, and vegetation, providing invaluable information for environmental monitoring, urban planning, agriculture, and various other applications.</p>
 </section>
-<section id="how-it-works" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="how-it-works"><span class="header-section-number">1.3</span> How it works?</h2>
+<section id="how-it-works" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="how-it-works"><span class="header-section-number">1.2</span> How it works?</h2>
 <p>Remote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:</p>
 <ol type="1">
-<li><p>Energy Source: An energy source, usually the sun or sensors, provides electromagnetic radiation that illuminates the Earth’s surface.</p></li>
-<li><p>Radiation and the Atmosphere: The Earth’s atmosphere interacts with the incoming radiation, absorbing some wavelengths while allowing others to pass through.</p></li>
-<li><p>Interaction with Earth’s Surface: When the radiation reaches the Earth’s surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.</p></li>
-<li><p>Detection by Sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.</p></li>
-<li><p>Analysis</p></li>
+<li><p>Energy source: An energy source, usually the sun or sensors, provides electromagnetic radiation (1.2.2) that illuminates the Earth’s surface.</p></li>
+<li><p>Radiation and the atmosphere: The Earth’s atmosphere interacts with the incoming radiation, absorbing or scattering (1.2.3) some wavelengths while allowing others to pass through.</p></li>
+<li><p>Interaction with Earth’s surface (1.2.4): When the radiation reaches the Earth’s surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.</p></li>
+<li><p>Detection by sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.</p></li>
+<li><p>Analysis using SNAP and R</p></li>
 </ol>
-<section id="sensors" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="sensors"><span class="header-section-number">1.3.1</span> Sensors</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/how_it_works.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figcaption>Source: <a href="https://geoinfotech.ng/techniques-of-remote-sensing/">geoinfotech</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="sensors" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="sensors"><span class="header-section-number">1.2.1</span> Sensors</h3>
 <p>Sensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth’s surface.</p>
 <p>There are two type of sensors:</p>
 <ul>
@@ -205,8 +215,9 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Active</strong>: Have an energy source which emits electromagnetic waves and then waits to receive</p></li>
 </ul>
 </section>
-<section id="electromagnetic-waves" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="electromagnetic-waves"><span class="header-section-number">1.3.2</span> Electromagnetic waves</h3>
+<section id="electromagnetic-waves" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="electromagnetic-waves"><span class="header-section-number">1.2.2</span> Electromagnetic waves</h3>
+<p>The electromagnetic spectrum is a broad classification that organizes electromagnetic waves according to their wavelengths and frequencies. It ranges from very short wavelengths, such as gamma rays and X-rays, to very long wavelengths, like radio waves. The visible spectrum, which can be detected by the human eye, is just a small part of the entire electromagnetic spectrum.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -217,23 +228,82 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>Emitted electromagnetic radiation with different wavelengths (bands) interacts with the surface materials and is then reflected back to the sensor. By analyzing the reflected signals, which vary across different materials due to their distinct reflectance properties, active sensors can identify and distinguish between various types of land cover. For example, vegetation absorbing most visible light for photosynthesis but reflecting much of the near-infrared light.</p>
+<p><em>Electromagnetic waves are part of electromagnetic radiation. However, sometimes they can be seen as the same.</em></p>
+</section>
+<section id="scattering" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="scattering"><span class="header-section-number">1.2.3</span> Scattering</h3>
+<p>Scattering, a process where particles deflect incoming light in various directions, affects how we perceive color in our environment.</p>
+<section id="why-is-the-sky-blue" class="level4" data-number="1.2.3.1">
+<h4 data-number="1.2.3.1" class="anchored" data-anchor-id="why-is-the-sky-blue"><span class="header-section-number">1.2.3.1</span> Why is the sky blue?</h4>
+<p>There are three types of atmospheric scattering:</p>
+<ul>
+<li>Rayleigh = particles are very small compared to the wavelength</li>
+<li>Mie = particles are the same size compared to the wavelength</li>
+<li>Non selective = particles are much larger than the wavelength Sunlight is scattered by particles in the atmosphere</li>
+</ul>
+<p>The sky appears blue due to Rayleigh scattering of shorter - blue - wavelengths by atmospheric particles. However, at sunrise or sunset there is much more atmosphere to pass through so more scattering occurs and red and orange light reach our eyes instead of blue.</p>
+</section>
+<section id="why-is-the-ocean-blue" class="level4" data-number="1.2.3.2">
+<h4 data-number="1.2.3.2" class="anchored" data-anchor-id="why-is-the-ocean-blue"><span class="header-section-number">1.2.3.2</span> Why is the ocean blue?</h4>
+<p>Similarly, the ocean’s blue color results from the water’s absorption of longer wavelengths and scattering of blue light. Shallow water can is clear as not many molecules scatter the light. And deeper ocean with more molecules scattering will appear blue.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/water.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figcaption>Left:shallow water. Right: deep water Source: <a href="https://wordsinmocean.com/2015/10/21/if-water-is-clear-why-is-the-ocean-blue//">wordsinmocean</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Think</strong>: Why does the moon have a black sky?</p>
 </section>
 </section>
-<section id="scattering" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="scattering"><span class="header-section-number">1.4</span> Scattering</h2>
-<section id="why-is-the-sky-blue" class="level3" data-number="1.4.1">
-<h3 data-number="1.4.1" class="anchored" data-anchor-id="why-is-the-sky-blue"><span class="header-section-number">1.4.1</span> Why is the sky blue?</h3>
+<section id="interacting-with-earths-surface" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="interacting-with-earths-surface"><span class="header-section-number">1.2.4</span> Interacting with Earth’s surface</h3>
+<p>The Bidirectional Reflectance Distribution Function (BRDF) describes how light is reflected at different angles, affecting the appearance of Earth’s surface from space.</p>
 </section>
-<section id="why-is-the-ocean-blue" class="level3" data-number="1.4.2">
-<h3 data-number="1.4.2" class="anchored" data-anchor-id="why-is-the-ocean-blue"><span class="header-section-number">1.4.2</span> Why is the ocean blue?</h3>
-<p><strong>Think</strong>:</p>
-<ol type="1">
-<li><p>Why does the moon have a black sky?</p></li>
-<li><p>Why does the healthy plant in daily life look green? Is it the same principle as above?</p></li>
-</ol>
+</section>
+<section id="resolutions" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="resolutions"><span class="header-section-number">1.3</span> Resolutions</h2>
+<ul>
+<li>Spatial resolution: The size of one pixel on the ground.</li>
+<li>Spectral resolution: The number of spectral bands that a sensor can measure.
+<ul>
+<li>We can take reflectance for each wavelength (or a band of several wavelengths) across the electromagnetic spectrum to create a spectral signature. Every feature on Earth will have a unique spectral signature.</li>
+</ul></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/spectral_signature.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figcaption>Source: <a href="https://www.researchgate.net/figure/Spectral-signatures-as-functions-of-wavelength-for-five-typical-surfaces-The-central_fig4_318843407">reasearchgate</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Temporal resolution: How often a sensor acquires data over the same location.</li>
+<li>Radiometric resolution: The sensitivity of a sensor to variations in signal strength due to different brightness levels that can be recorded by the sensor in each spectral band.</li>
+</ul>
+</section>
+<section id="something-about-the-practical" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="something-about-the-practical"><span class="header-section-number">1.4</span> Something about the practical</h2>
+<section id="landsat-and-sentinel" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="landsat-and-sentinel"><span class="header-section-number">1.4.1</span> Landsat and Sentinel</h3>
+<p>Landsat and Sentinel are both satellite programs used for Earth observation. Landsat, a joint program of NASA and the US Geological Survey, has been providing continuous global coverage since the 1970s. On the other hand, the Sentinel satellites are part of the European Union’s Copernicus program, designed for environmental monitoring with a more frequent revisit time.</p>
+<p>If we need to compare the data from Landsat and Sentinel of a study area, the thing has to be aware of is the band of Landsat is wider than Sentinel.</p>
+</section>
+</section>
+<section id="applications-of" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="applications-of"><span class="header-section-number">1.5</span> Applications of</h2>
+</section>
+<section id="reflections" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="reflections"><span class="header-section-number">1.6</span> Reflections</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

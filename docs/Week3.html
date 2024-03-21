@@ -218,6 +218,7 @@ window.Quarto = {
 <li>Irradiance: The amount of radiation from sun to the earth surface.</li>
 <li>Path radiance: Radiance that is reflected above the surface.</li>
 <li>Radiance: The amount of radiation from earth surface to the sensor.</li>
+<li>Reflectance: The ratio of light leaving to light striking. It’s the property of the material.</li>
 <li>Mosaicking: The process to merge two images.</li>
 <li>Nadir: The direction pointing directly downwards from the sensor, with no angular deviation.</li>
 </ol>
@@ -230,7 +231,7 @@ window.Quarto = {
 <h2 data-number="3.3" class="anchored" data-anchor-id="corrections"><span class="header-section-number">3.3</span> Corrections</h2>
 <section id="why-we-need-corrections-on-data" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="why-we-need-corrections-on-data"><span class="header-section-number">3.3.1</span> Why we need corrections on data?</h3>
-<p>Before the wave return to the sensor and form data, it will travel through a looong trip. The first station is atmosphere, then the ground (surface of the earth) which is covered by different materials and then experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:</p>
+<p>Before the wave return to the sensor and form data, it will travel through a looong trip (REMEMBER WEEK 1). The first station is atmosphere, then the ground which is covered by different materials and experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:</p>
 <ul>
 <li>Geometric correction</li>
 <li>Atmosphere correction</li>
@@ -266,7 +267,7 @@ window.Quarto = {
 <section id="atmospheric-correction" class="level3" data-number="3.3.3">
 <h3 data-number="3.3.3" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.3.3</span> Atmospheric correction</h3>
 <p>Always use this correction if you want to get precise data!</p>
-<p>When waves cross the atmosphere, the particles will scatter or absorb part of it (Remember Week 1: Why is sky blue?). Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.</p>
+<p>When waves cross the atmosphere, the particles will scatter or absorb part of it. Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.</p>
 <p>There are three types:</p>
 <ol type="1">
 <li>Relative</li>

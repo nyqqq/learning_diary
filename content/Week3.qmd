@@ -13,15 +13,16 @@ This week, we delved into the processing of remote sensing data covering correct
 3. Irradiance: The amount of radiation from sun to the earth surface.
 4. Path radiance: Radiance that is reflected above the surface.
 5. Radiance: The amount of radiation from earth surface to the sensor.
-6. Mosaicking: The process to merge two images.
-7. Nadir: The direction pointing directly downwards from the sensor, with no angular deviation.
+6. Reflectance: The ratio of light leaving to light striking. It's the property of the material.
+7. Mosaicking: The process to merge two images.
+8. Nadir: The direction pointing directly downwards from the sensor, with no angular deviation.
 
 ## Radiometric Calibration
 Radiometric calibration involves converting the digital number (DN) into spectral radiance using linear regression. This conversion is essential because DN, in its raw form, is unitless and not directly useful for analysis. The calibration coefficients are determined in the laboratory before the sensor's launch, facilitating the acquisition of radiance data. This process is a foundational step in data correction.
 
 ## Corrections
 ### Why we need corrections on data?
-Before the wave return to the sensor and form data, it will travel through a looong trip. The first station is atmosphere, then the ground (surface of the earth) which is covered by different materials and then experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:
+Before the wave return to the sensor and form data, it will travel through a looong trip (REMEMBER WEEK 1). The first station is atmosphere, then the ground which is covered by different materials and experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:
 
 - Geometric correction
 - Atmosphere correction
@@ -50,7 +51,7 @@ knitr::include_graphics('image/geometric_correction.png')
 ### Atmospheric correction
 Always use this correction if you want to get precise data!
 
-When waves cross the atmosphere, the particles will scatter or absorb part of it (Remember Week 1: Why is sky blue?). Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.
+When waves cross the atmosphere, the particles will scatter or absorb part of it. Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.
 
 There are three types:
 

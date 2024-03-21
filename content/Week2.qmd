@@ -1,7 +1,7 @@
 ---
-title: "Week2"
+title: "LiDAR"
 ---
-
+This week I will introduce LiDAR, an active sensor. The cool slide is made by Xaringan package.
 ```{=html}
-<iframe width="780" height="500" src="https://nyqqq.github.io/learning_diary/Slides.html" title="Quarto Documentation"></iframe>
+<iframe width="500" height="300" src="https://nyqqq.github.io/learning_diary/Slides.html" title="Quarto Documentation"></iframe>
 ```
