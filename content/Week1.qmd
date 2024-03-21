@@ -1,5 +1,52 @@
 ---
-title: "Week1"
+title: "Hello Remote Sensing!"
 ---
+This is the first week of our exciting lesson on remote sensing. I will start with some basic and important concepts to tell what is remote sensing and how it works. I will try to explain the terms which might seem scaring as clearly as possible. Sounds interesting, doesn't it? 
 
-1 2 3 4 5 a a aa
+## Dictionary
+
+
+## What is remote sensing?
+NASA defines remote sensing as acquiring information from a distance. Basically, this means there's no physical interaction between the sensors and the object. It involves observing and collecting data about Earth's surface. 
+
+Remote sensing allows us to see beyond what the human eye can detect. For instance, we can generate detailed topographic maps of the Earth's surface although we haven't been there. This capability enables us to easily distinguish between different land cover types such as urban areas, oceans, and vegetation, providing invaluable information for environmental monitoring, urban planning, agriculture, and various other applications.
+
+## How it works?
+Remote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:
+
+1. Energy Source: An energy source, usually the sun or sensors, provides electromagnetic radiation that illuminates the Earth's surface.
+
+2. Radiation and the Atmosphere: The Earth's atmosphere interacts with the incoming radiation, absorbing some wavelengths while allowing others to pass through.
+
+3. Interaction with Earth's Surface: When the radiation reaches the Earth's surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.
+
+4. Detection by Sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.
+
+5. Analysis
+
+### Sensors
+Sensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth's surface.
+
+There are two type of sensors:
+
+- **Passive**: Don't emit anything and detect reflected energy  from the sun which is in electromagnetic waves;
+
+- **Active**: Have an energy source which emits electromagnetic waves and then waits to receive
+
+### Electromagnetic waves
+
+```{r  echo=FALSE, out.width='80%', fig.align='center', fig.cap="Source: [OnlineLearningCollege](https://online-learning-college.com/knowledge-hub/gcses/gcse-physics-help/electromagnetic-spectrum/)"}
+knitr::include_graphics('image/spectrum.jpeg')
+```
+
+## Scattering
+
+### Why is the sky blue?
+
+### Why is the ocean blue?
+
+**Think**:
+
+1. Why does the moon have a black sky?
+
+2. Why does the healthy plant in daily life look green? Is it the same principle as above?

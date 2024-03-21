@@ -5,3 +5,9 @@ h1, h2, h3{
 .title-slide {
     background-color: #001057;
 }
+
+.small {
+  font-size: 70%;
+  line-height: 100%;
+
+}

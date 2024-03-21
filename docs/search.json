@@ -2,11 +2,11 @@
   {
     "objectID": "Week1.html",
     "href": "Week1.html",
-    "title": "1  Week1",
+    "title": "1  Hello Remote Sensing!",
     "section": "",
-    "text": "1 2 3 4 5 a a aa",
+    "text": "1.1 Dictionary",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week1</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]
   },
   {
@@ -27,6 +27,206 @@
     "text": "aaa",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week2</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html",
+    "href": "Week3.html",
+    "title": "3  Touch the Essense of Data",
+    "section": "",
+    "text": "3.1 Dictionary",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#why-we-need-corrections-to",
+    "href": "Week3.html#why-we-need-corrections-to",
+    "title": "3  Corrections of remote sensing data",
+    "section": "3.2 Why we need corrections to",
+    "text": "3.2 Why we need corrections to",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections of remote sensing data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#why-we-need-corrections-on-data",
+    "href": "Week3.html#why-we-need-corrections-on-data",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.2 Why we need corrections on data?",
+    "text": "3.2 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip. The first station is atmosphere, then the ground (surface of the earth) which is covered by different materials and then experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#dictionary",
+    "href": "Week3.html#dictionary",
+    "title": "3  Touch the Essense of Data",
+    "section": "",
+    "text": "Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.\nDigital number (DN): Raw data collected by satellites, representing the brightness values of images.\nIrradiance: The amount of radiation from sun to the earth surface.\nPath radiance: Radiance that is reflected above the surface.\nRadiance: The amount of radiation from earth surface to the sensor.\nMosaicking: The process to merge two images.\nNadir: The direction pointing directly downwards from the sensor, with no angular deviation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#geometric-correction",
+    "href": "Week3.html#geometric-correction",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.3 Geometric correction",
+    "text": "3.3 Geometric correction\nData may be distorted because of 总结一下:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of the earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image.\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nSource: Geometric correction procedures\n\n\n\n\nThink: Which way is better? (Hint: What will happen if the EO data is 补充一下)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#atmospheric-correction",
+    "href": "Week3.html#atmospheric-correction",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.4 Atmospheric correction",
+    "text": "3.4 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it (Remember Week 1: Why is sky blue?). Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#orthorectification-correction-topographic-correction",
+    "href": "Week3.html#orthorectification-correction-topographic-correction",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.5 Orthorectification correction/ topographic correction",
+    "text": "3.5 Orthorectification correction/ topographic correction",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#summary-of-data-processing",
+    "href": "Week3.html#summary-of-data-processing",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.3 Summary of data processing",
+    "text": "3.3 Summary of data processing",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#application-of-corrections-in-literature",
+    "href": "Week3.html#application-of-corrections-in-literature",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.6 Application of corrections in literature",
+    "text": "3.6 Application of corrections in literature\nIn the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.\nThe study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.\nOn the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.\nThese papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.\nIn conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#reflections",
+    "href": "Week3.html#reflections",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.7 Reflections",
+    "text": "3.7 Reflections\nReflecting on this week’s content, I’m particularly fascinated by the complex interplay between the theoretical aspects of remote sensing data processing and their practical applications in environmental monitoring. The nuanced understanding of atmospheric attenuation, radiometric calibration, and the various corrections—geometric, atmospheric, and orthorectification—highlights the intricate challenges inherent in deriving accurate and useful data from satellite imagery. The notion that the journey of electromagnetic radiation, from its source to the sensor, is fraught with alterations by atmospheric conditions, terrain, and human-induced factors, underscores the importance of these corrections in ensuring data reliability.\nThe methodologies and tools discussed, such as radiative transfer models (e.g., MODTRAN 4+ and Py6S) and the empirical line method, showcase the scientific community’s efforts to enhance data accuracy. It’s enlightening to understand that despite the complexity of these processes, advancements in remote sensing technologies and algorithms have made it increasingly feasible to obtain high-quality, corrected datasets. This progression not only makes remote sensing data more accessible but also amplifies its utility across a broad spectrum of environmental studies.\nFrom a personal standpoint, the aspect of atmospheric correction and its critical role in environmental applications captivates me. Knowing that different correction methods (e.g., DOS, FLAASH, ATCOR) can yield varied results depending on the specific context (e.g., vegetation, water bodies, atmospheric conditions) provides a deep insight into the necessity of selecting the appropriate technique for each study. This selection process, nuanced and dependent on the environmental parameter in question, exemplifies the critical thinking required in environmental science.\nLooking to the future, the skills and knowledge gained this week have profound implications for my potential involvement in environmental monitoring projects. Understanding how to process and correct remote sensing data ensures that I can contribute to generating accurate and meaningful insights into environmental changes, such as deforestation, urban expansion, and climate change impacts. Moreover, the discussion about dataset joining and enhancements like contrast, edge, and texture enhancements piques my interest in exploring how these techniques can be applied to improve data visualization and interpretation.\nHowever, the acknowledgment of the limitations and potential inaccuracies inherent in atmospheric correction algorithms serves as a reminder of the need for continuous improvement in remote sensing technologies and methodologies. It suggests that while current tools and data are immensely valuable, there is always room for innovation that could lead to even more precise and reliable environmental monitoring solutions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#corrections",
+    "href": "Week3.html#corrections",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.3 Corrections",
+    "text": "3.3 Corrections\n\n3.3.1 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip. The first station is atmosphere, then the ground (surface of the earth) which is covered by different materials and then experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction\n\n\n\n3.3.2 Geometric correction\nData may be distorted because of several factors:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of the earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image;\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nGeometric correction procedures. Source: researchgate\n\n\n\n\nThink: Which way is better?\n\n\n3.3.3 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it (Remember Week 1: Why is sky blue?). Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.\nThere are three types:\n\nRelative\n\n\nDark object subtraction (DOS): assume the darkest value of pixel in the image should be 0;\nPseudo-invariant features (PIFs): linear regression with the coefficients calculating from objects not change.\n\n\nAbsolute\n\nIt involves converting digital brightness values to scaled surface reflectance, facilitating comparisons across different regions of the planet. This is achieved through atmospheric radiative transfer models, such as MODTRAN 4+ and Py6S.\n\nEmpirical life correction\n\n\\[\nReflectance (field spectrum) = gain × radiance (input data) + offset\n\\] whew gain is atmospheric attenuation, offset is path radiance. We often choose a light object and a dark object on site and use the measured reflectance to calculate the empirical line, and then apply the line to all things.\n\n\n\n\n\nExample of an empirical line using two targets of contrasting albedo. Source: researchgate\n\n\n\n\n\n\n3.3.4 Orthorectification/topographic correction\nThe purpose of orthorectification correction is to make pixels viewed at nadiar.\nSolar zenith and solar azimuth describing the illumination source will be used in the formula.\n\n\n\n\n\nSolar zenith and solar azimuth Source: catalyst.earth\n\n\n\n\n\n\n3.3.5 Summary of corrections\n\n\n3.3.6 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#radiometric-calibration",
+    "href": "Week3.html#radiometric-calibration",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.2 Radiometric Calibration",
+    "text": "3.2 Radiometric Calibration\nRadiometric calibration involves converting the digital number (DN) into spectral radiance using linear regression. This conversion is essential because DN, in its raw form, is unitless and not directly useful for analysis. The calibration coefficients are determined in the laboratory before the sensor’s launch, facilitating the acquisition of radiance data. This process is a foundational step in data correction.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#summary-of-corrections",
+    "href": "Week3.html#summary-of-corrections",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.4 Summary of corrections",
+    "text": "3.4 Summary of corrections",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#exciting-news",
+    "href": "Week3.html#exciting-news",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.5 Exciting news",
+    "text": "3.5 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#datasets-joining",
+    "href": "Week3.html#datasets-joining",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.6 Datasets joining",
+    "text": "3.6 Datasets joining\njoin datasets - mosaicking feather a base image and second image",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#enhancement",
+    "href": "Week3.html#enhancement",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.5 Enhancement",
+    "text": "3.5 Enhancement\n\nContrast enhancement\nLocal enhancement - specific to a pixel\nEdge enhancement\nPrincipal component analysis (PCA)\n\nSome studies group the variables - social/environmental to assess the importance of the factors and identify the changes.\n\nTexture enhancement\n\n\nfirst order variance value based on neighborhood\nsecond order variance shift to up/down/left/right",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#dataset-joining",
+    "href": "Week3.html#dataset-joining",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.4 Dataset joining",
+    "text": "3.4 Dataset joining\nWhen mosaicking for our study area, the brightness, colour or some images properties may differ, which will cause a seamline between them. Thus, we will feather the base image and the second image:\n\nWithin the overlap area an representative sample is taken\nA histogram is extracted from the base image\nIt is then applied to image to using a histogram matching algorithm",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#how-it-works",
+    "href": "Week1.html#how-it-works",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.3 How it works?",
+    "text": "1.3 How it works?\nRemote sensing works by detecting and measuring the electromagnetic waves that is reflected by objects on Earth. This process involves several key steps:\n\nEnergy Source: An energy source, usually the sun or sensors, provides electromagnetic radiation that illuminates the Earth’s surface.\nRadiation and the Atmosphere: The Earth’s atmosphere interacts with the incoming radiation, absorbing some wavelengths while allowing others to pass through.\nInteraction with Earth’s Surface: When the radiation reaches the Earth’s surface, different objects — such as water, forests, buildings, and fields — reflect, absorb, or transmit the radiation in various ways, depending on their material and structure.\nDetection by Sensors: Sensors on satellites or aircraft then detect and record the reflected radiation.\nAnalysis\n\n\n1.3.1 Sensors\nSensors can be mounted on any platform, such as satellites and aircraft mentioned above. They are designed to capture data in specific wavelengths or bands, which can reveal different features of the Earth’s surface.\nThere are two type of sensors:\n\nPassive: Don’t emit anything and detect reflected energy from the sun which is in electromagnetic waves;\nActive: Have an energy source which emits electromagnetic waves and then waits to receive\n\n\n\n1.3.2 Electromagnetic waves\n\n\n\n\n\nSource: OnlineLearningCollege",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#scattering",
+    "href": "Week1.html#scattering",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.4 Scattering",
+    "text": "1.4 Scattering\n\n1.4.1 Why is the sky blue?\n\n\n1.4.2 Why is the ocean blue?\nThink:\n\nWhy does the moon have a black sky?\nWhy does the healthy plant in daily life look green? Is it the same principle as above?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#what-is-remote-sensing",
+    "href": "Week1.html#what-is-remote-sensing",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.2 What is remote sensing?",
+    "text": "1.2 What is remote sensing?\nNASA defines remote sensing as acquiring information from a distance. Basically, this means there’s no physical interaction between the sensors and the object. It involves observing and collecting data about Earth’s surface.\nRemote sensing allows us to see beyond what the human eye can detect. For instance, we can generate detailed topographic maps of the Earth’s surface although we haven’t been there. This capability enables us to easily distinguish between different land cover types such as urban areas, oceans, and vegetation, providing invaluable information for environmental monitoring, urban planning, agriculture, and various other applications.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]
   }
 ]
