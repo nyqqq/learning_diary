@@ -107,16 +107,26 @@ Drawbacks:
 
 ## Applications
 
-This week, I focus on the applications of machine learning techniques, specifically Support Vector Machines (SVM), Random Forest (RF), and Classification and Regression Trees (CART), for the classification of remote sensing data.
+This week, I focus on studies of machine learning techniques, specifically Support Vector Machines (SVM), Random Forest (RF), and Classification and Regression Trees (CART), for the classification of remote sensing data.
 
-The exploration begins with SVM, where I focus on comparing its classification accuracy against other methods like Maximum Likelihood (ML) and Artificial Neural Networks (ANN) in remote sensing data analysis. This method proves to be highly effective in high-dimensional spaces, even when the number of dimensions exceeds the number of samples, although it demands careful parameter tuning and kernel selection, which can be computationally intensive for large datasets.
+Pal and Mather (2015a) focus on comparing its classification accuracy against other methods like Maximum Likelihood (ML) and Artificial Neural Networks (ANN) in remote sensing data analysis. This method proves to be highly effective in high-dimensional spaces, even when the number of dimensions exceeds the number of samples. But it demands careful parameter tuning and kernel selection, which can be computationally intensive for large datasets.
 
-Moving on to Random Forest, I investigate its performance in terms of land cover classification accuracy, training time, and user-defined parameters using Landsat ETM+ data. The RF method stands out for its ability to handle missing values while maintaining accuracy, and for providing estimates of which variables are important in the classification process. However, it can be slow to generate predictions when involving a large number of trees and deep trees, presenting a challenge in terms of computational efficiency.
+Pal (2005b) investigate Random Foerst performance in terms of land cover classification accuracy, training time, and user-defined parameters using Landsat ETM+ data. The RF method stands out for its ability to handle missing values while maintaining accuracy, and for providing estimates of which variables are important in the classification process. However, it can be slow to generate predictions when involving a large number of trees and deep trees, presenting a challenge in terms of computational efficiency.
 
-Lastly, my study incorporates CART, used in conjunction with SVM and RF, for classifying vegetation in the Jodhpur region using Sentinel-2 satellite data. CART offers ease of understanding and interpretation and can handle both numerical and categorical data. Its main drawback, however, is its tendency to overfit, especially with noisy data, which can compromise the accuracy of the classification.
+Vani et al (2023) incorporates CART, used in conjunction with SVM and RF, for classifying vegetation in the Jodhpur region using Sentinel-2 satellite data. CART offers ease of understanding and interpretation and can handle both numerical and categorical data. Its main drawback, however, is its tendency to overfit, especially with noisy data, which can compromise the accuracy of the classification.
 
-Throughout my research, I notice a recurring theme: the choice among SVM, RF, and CART depends on the specific requirements of the classification task, including the need for model interpretability, computational efficiency, and the capability to handle high-dimensional data or missing values. This comparative analysis not only highlights the unique strengths and suitability of each method for different scenarios but also sheds light on the complexities involved in remote sensing data classification, guiding my future research directions in this field.
+Throughout these three research, I notice that the choice among SVM, RF, and CART depends on the specific requirements of the classification task, including the need for model interpretability, computational efficiency, and the capability to handle high-dimensional data or missing values. 
 
 ## Reflection
 
 This week, diving into how machines can learn to map out our world using satellite images really caught my attention. It's like teaching a computer to see the Earth the way we do, but it can deal with loads of data faster than any human. Learning about how we can tell a computer to figure out where cities are growing or where forests are being cut down was super interesting and kind of important, especially when thinking about keeping an eye on the environment.
+
+We have studied many machine learning methods before. However, the application of models is still superficial. This is the first time that I have a deep and thorough understanding of these methods in a certain aspect and field. At the same time, I also implemented it myself in practice, which was to apply the knowledge I learned to an area that I didn't understand at all before. It’s so cool!
+
+## References
+
+1. Pal, M. & Mather, P.M., 2005a. Support vector machines for classification in remote sensing. *International Journal of Remote Sensing*, 26(5), pp.1007-1011. doi: 10.1080/01431160512331314083.
+
+2. Pal, M., 2005b. Random forest classifier for remote sensing classification. *International Journal of Remote Sensing*, 26(1), pp.217-222. doi: 10.1080/01431160412331269698.
+
+3. Vani, K.S., Susarla, M., Lakshmi, E.T.N., Hussain, M.S.A. & Enosh, P., 2023. Classification of vegetation using Sentinel-2 images of Jodhpur region. In: *Proceedings of the 9th International Conference on Advanced Computing and Communication Systems (ICACCS)*.

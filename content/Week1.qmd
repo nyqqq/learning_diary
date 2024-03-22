@@ -91,11 +91,11 @@ I explore the application of spectral signatures to roof materials.
 
 The varied implementations of spectral signature technology — especially Spectral Angle Mapper (SAM) and traditional spectral signature analysis — demonstrate the flexibility and efficacy of this technology in tackling complex application scenarios.
 
-In the context of post-disaster management, as illustrated in "Integrating Imaging Spectroscopy (445–2543 nm) and Geographic Information Systems for Post-Disaster Management: A Case of Hailstorm Damage in Sydney," the application of spectral signature technology, particularly the SAM method, showcases its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.
+In the context of post-disaster management,Bhaskaran et al. (2024) apply spectral signature technology, particularly the SAM method, showcasing its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.
 
 However, the application of the SAM method also faces challenges, primarily the dependency on accurate and representative reference spectral libraries. Additionally, despite SAM's insensitivity to variations in lighting conditions, field verification remains an indispensable step to ensure classification accuracy, which may increase the time and cost of the research.
 
-On the other hand, in studies focusing on urban roofing material classification, such as "Methodology for Urban Roof Material Classification from Hyperspectral Data," traditional spectral signature analysis methods applied to hyperspectral data demonstrate their capability in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.
+On the other hand, Wyard et al. (2023) focus on urban roofing material classification. They apply traditional spectral signature analysis methods to hyperspectral data which demonstrate the capability of spectral signatures in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.
 
 However, this method is sensitive to lighting conditions and may require complex data preprocessing steps, such as atmospheric correction and normalization, adding to the complexity of the analysis.
 
@@ -107,3 +107,9 @@ The fundamental concept of acquiring information about Earth's surface from a di
 The coverage on the electromagnetic spectrum and its significance in remote sensing particularly resonated with me. The explanation of how different wavelengths interact with Earth's surface materials, allowing for the discrimination between various land covers, is a testament to the power of remote sensing in environmental monitoring, agriculture, and urban planning. This knowledge is not just academic; it has real-world applications that can lead to more informed decision-making and sustainable practices.
 
 The advancements in sensor technology, data analysis tools, and the increasing accessibility of satellite data open up new avenues for exploration and innovation. While the current applications are vast, the potential for future developments is boundless. Whether it's enhancing our understanding of climate change impacts, improving agricultural yields, or planning smarter cities, remote sensing stands at the forefront of technological advancement in our quest to understand and manage the Earth's resources more effectively.
+
+## References
+
+1. Bhaskaran, S., Datt, B., Forster, B., Neal, T. & Brown, M., 2004. Integrating imaging spectroscopy (445–2543 nm) and geographic information systems for post-disaster management: a case of hailstorm damage in Sydney. *International Journal of Remote Sensing*, 25(13), pp.2625-2639. doi: 10.1080/01431160310001642331.
+
+2. Wyard, C., Marion, R. & Hallot, E., 2023. WaRM: A Roof Material Spectral Library for Wallonia, Belgium. *Data*. 8, 59. https:// doi.org/10.3390/data8030059.

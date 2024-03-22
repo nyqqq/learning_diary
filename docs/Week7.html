@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary for Remotely Sensing Cities and Environment - 7&nbsp; Classification II</title>
+<title>Learning Diary for Remotely Sensing Cities and Environment - 7&nbsp; Classification [Level up]</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification [Level up]</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification [Level up]</span></span></a>
   </div>
 </li>
     </ul>
@@ -169,6 +169,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#spatial-autocorrelation" id="toc-spatial-autocorrelation" class="nav-link" data-scroll-target="#spatial-autocorrelation"><span class="header-section-number">7.4</span> Spatial autocorrelation</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.5</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.6</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.7</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -177,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification [Level up]</span></h1>
 </div>
 
 
@@ -194,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This week we embarked on a journey to the world of land cover classification, employing the cutting-edge Dynamic World dataset. This dataset, a product of semi-supervised learning and convolutional neural networks (CNNs), stands at the forefront of near real-time environmental observation. It exemplifies how technology can peel back the layers of the Earth’s surface to reveal land use and cover.</p>
+<p>This week we continue the journey to the world of land cover classification, employing the cutting-edge Dynamic World dataset. This dataset, a product of semi-supervised learning and convolutional neural networks (CNNs), stands at the forefront of near real-time environmental observation. It exemplifies how technology can peel back the layers of the Earth’s surface to reveal land use and cover.</p>
 <section id="dynamic-world" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="dynamic-world"><span class="header-section-number">7.1</span> Dynamic world</h2>
 <p>Dynamic World Datasets are more than just data; they are new perspectives on Earth. The dataset provides a near-real-time view of the Earth through the lens of Sentinel-2 satellite imagery, classifying each pixel into a land cover type.</p>
@@ -222,14 +223,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="applications" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.5</span> Applications</h2>
 <p>I explore the classification methods detailed in several studies, focusing on the comparison and analysis of different approaches like Multilayer Perceptron (MLP), Adaptive Resonance Theory Map (ARTMAP), its variant ART-MMAP, Regression Tree (RT), and the shift towards Geographic Object-Based Image Analysis (GEOBIA).</p>
-<p>The study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.</p>
-<p>In another direction, the move towards GEOBIA as a new paradigm is discussed, marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.</p>
+<p>Liu and Wu’s (2014) study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.</p>
+<p>The move towards GEOBIA as a new paradigm is discussed by Blaschke et al.&nbsp;(2014), marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.</p>
 <p>Each method has its strengths and challenges. For instance, MLP’s effectiveness in sub-pixel classification is balanced by the need for extensive training and parameter selection. ART-MMAP’s improvements over ARTMAP for sub-pixel data highlight the potential for fine-tuned models to enhance prediction accuracy. However, transitioning to GEOBIA requires overcoming significant theoretical and practical challenges, including the development of new analysis tools and adapting to a fundamentally different approach to image analysis.</p>
 </section>
 <section id="reflection" class="level2" data-number="7.6">
 <h2 data-number="7.6" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.6</span> Reflection</h2>
 <p>I am struck by the profound intersection of technology and environmental science. It utilizes semi-supervised learning and convolutional neural networks to not only present data; but also reveals a new way of observing and understanding the structure of the Earth. The dynamic world dataset particularly attracts me with its near real-time capabilities because of its potential to change the way we monitor and manage Earth’s resources.</p>
 <p>The shift from pixel-based to object-based image analysis and the introduction of subpixel analysis are equally fascinating. They show greater precision and details in understanding the Earth’s surface. OBIA, with its focus on shapes and textures, and subpixel analysis, with its detailed quantification within pixels, both represent a large jump in our ability to interpret satellite imagery.</p>
+</section>
+<section id="references" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="references"><span class="header-section-number">7.7</span> References</h2>
+<ol type="1">
+<li><p>Liu, W. and Wu, E.Y., 2014. Comparison of non-linear mixture models: sub-pixel classification. <em>Remote Sensing of Environment</em>, 94(2015), pp.145-154.</p></li>
+<li><p>Blaschke, T., Hay, G.J., Kelly, M., Lang, S., Hofmann, P., Addink, E., Feitosa, R.Q., van der Meer, F., van der Werff, H., van Coillie, F. and Tiede, D., 2014. Geographic Object-Based Image Analysis – Towards a new paradigm. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 87(2014), pp.180-191.</p></li>
+</ol>
 
 
 </section>

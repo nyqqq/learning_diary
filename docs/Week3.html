@@ -168,7 +168,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
   </div>
 </li>
     </ul>
@@ -196,6 +208,7 @@ window.Quarto = {
   <li><a href="#enhancement" id="toc-enhancement" class="nav-link" data-scroll-target="#enhancement"><span class="header-section-number">3.5</span> Enhancement</a></li>
   <li><a href="#application-of-corrections-in-literature" id="toc-application-of-corrections-in-literature" class="nav-link" data-scroll-target="#application-of-corrections-in-literature"><span class="header-section-number">3.6</span> Application of corrections in literature</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.7</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.8</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -372,10 +385,10 @@ Reflectance (field spectrum) = gain × radiance (input data) + offset
 </section>
 <section id="application-of-corrections-in-literature" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="application-of-corrections-in-literature"><span class="header-section-number">3.6</span> Application of corrections in literature</h2>
-<p>In the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.</p>
-<p>The study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.</p>
-<p>On the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.</p>
-<p>These papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.</p>
+<p>In the areas of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.</p>
+<p>Dewi and Trisakti (2016) compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.</p>
+<p>On the other hand, Fuyi et al’s (2013) evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.</p>
+<p>These two papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.</p>
 <p>In conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.</p>
 </section>
 <section id="reflection" class="level2" data-number="3.7">
@@ -385,6 +398,13 @@ Reflectance (field spectrum) = gain × radiance (input data) + offset
 <p>From a personal standpoint, the aspect of atmospheric correction and its critical role in environmental applications captivates me. Knowing that different correction methods (e.g., DOS, FLAASH, ATCOR) can yield varied results depending on the specific context (e.g., vegetation, water bodies, atmospheric conditions) provides a deep insight into the necessity of selecting the appropriate technique for each study. This selection process, nuanced and dependent on the environmental parameter in question, exemplifies the critical thinking required in environmental science.</p>
 <p>Looking to the future, the skills and knowledge gained this week have profound implications for my potential involvement in environmental monitoring projects. Understanding how to process and correct remote sensing data ensures that I can contribute to generating accurate and meaningful insights into environmental changes, such as deforestation, urban expansion, and climate change impacts. Moreover, the discussion about dataset joining and enhancements like contrast, edge, and texture enhancements piques my interest in exploring how these techniques can be applied to improve data visualization and interpretation.</p>
 <p>However, the acknowledgment of the limitations and potential inaccuracies inherent in atmospheric correction algorithms serves as a reminder of the need for continuous improvement in remote sensing technologies and methodologies. It suggests that while current tools and data are immensely valuable, there is always room for innovation that could lead to even more precise and reliable environmental monitoring solutions.</p>
+</section>
+<section id="references" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="references"><span class="header-section-number">3.8</span> References</h2>
+<ol type="1">
+<li><p>Dewi, E.K. &amp; Trisakti, B., 2016. Comparing atmospheric correction methods for Landsat OLI data. <em>International Journal of Remote Sensing and Earth Sciences</em>, 13(2), pp.105-120.</p></li>
+<li><p>Fuyi, T., Mohammed, S.K., Abdullah, K., Lim, H.S. &amp; Ishola, K.S., 2013. A comparison of atmospheric correction techniques for environmental applications. In: Proceedings of the 2013 IEEE International Conference on Space Science and Communication (IconSpace), 1-3 July 2013, Melaka, Malaysia.</p></li>
+</ol>
 
 
 </section>

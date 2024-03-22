@@ -114,7 +114,7 @@
     "href": "Week3.html#application-of-corrections-in-literature",
     "title": "3  Touch the Essense of Data",
     "section": "3.6 Application of corrections in literature",
-    "text": "3.6 Application of corrections in literature\nIn the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.\nThe study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.\nOn the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.\nThese papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.\nIn conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.",
+    "text": "3.6 Application of corrections in literature\nIn the areas of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.\nDewi and Trisakti (2016) compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.\nOn the other hand, Fuyi et al’s (2013) evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.\nThese two papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.\nIn conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -274,7 +274,7 @@
     "href": "Week1.html#applications-of-spectral-signatures",
     "title": "1  Hello Remote Sensing!",
     "section": "1.5 Applications of spectral signatures",
-    "text": "1.5 Applications of spectral signatures\nI explore the application of spectral signatures to roof materials.\nThe varied implementations of spectral signature technology — especially Spectral Angle Mapper (SAM) and traditional spectral signature analysis — demonstrate the flexibility and efficacy of this technology in tackling complex application scenarios.\nIn the context of post-disaster management, as illustrated in “Integrating Imaging Spectroscopy (445–2543 nm) and Geographic Information Systems for Post-Disaster Management: A Case of Hailstorm Damage in Sydney,” the application of spectral signature technology, particularly the SAM method, showcases its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.\nHowever, the application of the SAM method also faces challenges, primarily the dependency on accurate and representative reference spectral libraries. Additionally, despite SAM’s insensitivity to variations in lighting conditions, field verification remains an indispensable step to ensure classification accuracy, which may increase the time and cost of the research.\nOn the other hand, in studies focusing on urban roofing material classification, such as “Methodology for Urban Roof Material Classification from Hyperspectral Data,” traditional spectral signature analysis methods applied to hyperspectral data demonstrate their capability in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.\nHowever, this method is sensitive to lighting conditions and may require complex data preprocessing steps, such as atmospheric correction and normalization, adding to the complexity of the analysis.\nThe application of the SAM method in post-disaster management highlights the importance of spectral techniques in rapid disaster response and resource allocation. In contrast, traditional spectral signature methods in urban roofing material classification research exhibit their strengths in detailed material identification.",
+    "text": "1.5 Applications of spectral signatures\nI explore the application of spectral signatures to roof materials.\nThe varied implementations of spectral signature technology — especially Spectral Angle Mapper (SAM) and traditional spectral signature analysis — demonstrate the flexibility and efficacy of this technology in tackling complex application scenarios.\nIn the context of post-disaster management,Bhaskaran et al. (2024) apply spectral signature technology, particularly the SAM method, showcasing its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.\nHowever, the application of the SAM method also faces challenges, primarily the dependency on accurate and representative reference spectral libraries. Additionally, despite SAM’s insensitivity to variations in lighting conditions, field verification remains an indispensable step to ensure classification accuracy, which may increase the time and cost of the research.\nOn the other hand, Wyard et al. (2023) focus on urban roofing material classification. They apply traditional spectral signature analysis methods to hyperspectral data which demonstrate the capability of spectral signatures in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.\nHowever, this method is sensitive to lighting conditions and may require complex data preprocessing steps, such as atmospheric correction and normalization, adding to the complexity of the analysis.\nThe application of the SAM method in post-disaster management highlights the importance of spectral techniques in rapid disaster response and resource allocation. In contrast, traditional spectral signature methods in urban roofing material classification research exhibit their strengths in detailed material identification.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
     ]
@@ -404,7 +404,7 @@
     "href": "Week6.html#applications",
     "title": "6  Classification",
     "section": "6.6 Applications",
-    "text": "6.6 Applications\nThis week, I focus on the applications of machine learning techniques, specifically Support Vector Machines (SVM), Random Forest (RF), and Classification and Regression Trees (CART), for the classification of remote sensing data.\nThe exploration begins with SVM, where I focus on comparing its classification accuracy against other methods like Maximum Likelihood (ML) and Artificial Neural Networks (ANN) in remote sensing data analysis. This method proves to be highly effective in high-dimensional spaces, even when the number of dimensions exceeds the number of samples, although it demands careful parameter tuning and kernel selection, which can be computationally intensive for large datasets.\nMoving on to Random Forest, I investigate its performance in terms of land cover classification accuracy, training time, and user-defined parameters using Landsat ETM+ data. The RF method stands out for its ability to handle missing values while maintaining accuracy, and for providing estimates of which variables are important in the classification process. However, it can be slow to generate predictions when involving a large number of trees and deep trees, presenting a challenge in terms of computational efficiency.\nLastly, my study incorporates CART, used in conjunction with SVM and RF, for classifying vegetation in the Jodhpur region using Sentinel-2 satellite data. CART offers ease of understanding and interpretation and can handle both numerical and categorical data. Its main drawback, however, is its tendency to overfit, especially with noisy data, which can compromise the accuracy of the classification.\nThroughout my research, I notice a recurring theme: the choice among SVM, RF, and CART depends on the specific requirements of the classification task, including the need for model interpretability, computational efficiency, and the capability to handle high-dimensional data or missing values. This comparative analysis not only highlights the unique strengths and suitability of each method for different scenarios but also sheds light on the complexities involved in remote sensing data classification, guiding my future research directions in this field.",
+    "text": "6.6 Applications\nThis week, I focus on studies of machine learning techniques, specifically Support Vector Machines (SVM), Random Forest (RF), and Classification and Regression Trees (CART), for the classification of remote sensing data.\nPal and Mather (2015a) focus on comparing its classification accuracy against other methods like Maximum Likelihood (ML) and Artificial Neural Networks (ANN) in remote sensing data analysis. This method proves to be highly effective in high-dimensional spaces, even when the number of dimensions exceeds the number of samples. But it demands careful parameter tuning and kernel selection, which can be computationally intensive for large datasets.\nPal (2005b) investigate Random Foerst performance in terms of land cover classification accuracy, training time, and user-defined parameters using Landsat ETM+ data. The RF method stands out for its ability to handle missing values while maintaining accuracy, and for providing estimates of which variables are important in the classification process. However, it can be slow to generate predictions when involving a large number of trees and deep trees, presenting a challenge in terms of computational efficiency.\nVani et al (2023) incorporates CART, used in conjunction with SVM and RF, for classifying vegetation in the Jodhpur region using Sentinel-2 satellite data. CART offers ease of understanding and interpretation and can handle both numerical and categorical data. Its main drawback, however, is its tendency to overfit, especially with noisy data, which can compromise the accuracy of the classification.\nThroughout these three research, I notice that the choice among SVM, RF, and CART depends on the specific requirements of the classification task, including the need for model interpretability, computational efficiency, and the capability to handle high-dimensional data or missing values.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
     ]
@@ -414,7 +414,7 @@
     "href": "Week6.html#reflection",
     "title": "6  Classification",
     "section": "6.7 Reflection",
-    "text": "6.7 Reflection\nThis week, diving into how machines can learn to map out our world using satellite images really caught my attention. It’s like teaching a computer to see the Earth the way we do, but it can deal with loads of data faster than any human. Learning about how we can tell a computer to figure out where cities are growing or where forests are being cut down was super interesting and kind of important, especially when thinking about keeping an eye on the environment.",
+    "text": "6.7 Reflection\nThis week, diving into how machines can learn to map out our world using satellite images really caught my attention. It’s like teaching a computer to see the Earth the way we do, but it can deal with loads of data faster than any human. Learning about how we can tell a computer to figure out where cities are growing or where forests are being cut down was super interesting and kind of important, especially when thinking about keeping an eye on the environment.\nWe have studied many machine learning methods before. However, the application of models is still superficial. This is the first time that I have a deep and thorough understanding of these methods in a certain aspect and field. At the same time, I also implemented it myself in practice, which was to apply the knowledge I learned to an area that I didn’t understand at all before. It’s so cool!",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
     ]
@@ -422,21 +422,21 @@
   {
     "objectID": "Week5.html",
     "href": "Week5.html",
-    "title": "5  Week5",
+    "title": "5  Google Earth Engine",
     "section": "",
-    "text": "5.1 What is Google Earth Engine?\nGoogle Earth Engine (GEE) is an advanced cloud-based platform designed for environmental data analysis. It allows researchers, scientists, and enthusiasts to process and analyze vast amounts of Earth observation data.",
+    "text": "5.1 What is Google Earth Engine?\nGoogle Earth Engine (GEE) is an advanced cloud-based platform designed for environmental data analysis. It allows researchers, scientists, and enthusiasts to process and analyze vast amounts of Earth observation data.\n1. Terms:\n2. Client vs Server\n3. Scale\n4. Projection\n5. Building blocks\n6. Manipulation\n7. Advanced features",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week5</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
     ]
   },
   {
     "objectID": "Week5.html#what-is-google-earth-engine",
     "href": "Week5.html#what-is-google-earth-engine",
-    "title": "5  Week5",
+    "title": "5  Google Earth Engine",
     "section": "",
-    "text": "5.1.1 Key jargons\n\n\n5.1.2 Client Side vs Server side",
+    "text": "Images (Raster Data) and Features (Vector Data)\nImageCollections and FeatureCollections\n\n\n\nBrowser vs Google Servers\nServer-side objects (prefixed with ee.)\n\n\n\nAs pixel resolution, determined by output\n\n\n\nAutomatic data projection to Mercator (EPSG:3857)\n\n\n\nObjects, classes, and methods (functions)\n\n\n\nLoading and filtering ImageCollections\nGeometries and feature manipulations\nDataset reduction (Spatial or Temporal)\nPixel-level regression analysis\n\n\n\nSpatial and attribute joins\nMachine learning applications",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week5</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
     ]
   },
   {
@@ -452,71 +452,171 @@
   {
     "objectID": "Week7.html",
     "href": "Week7.html",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "",
     "text": "7.1 Dynamic world\nDynamic World Datasets are more than just data; they are new perspectives on Earth. The dataset provides a near-real-time view of the Earth through the lens of Sentinel-2 satellite imagery, classifying each pixel into a land cover type.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#dynamic-world",
     "href": "Week7.html#dynamic-world",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "",
     "text": "Semi-supervised learning approach: By dividing the world into 14 biomes, the dataset applies a nuanced approach to classification, using both expert and non-expert inputs to train its model.\nTraining data and techniques: Approximately 24,000 image tiles were labeled, with a notable emphasis on achieving high confidence levels in classification accuracy. Techniques such as data augmentation, including image rotation and log-transforming reflectance values, play a critical role in enhancing model performance.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#obia-and-subpixel-analysis",
     "href": "Week7.html#obia-and-subpixel-analysis",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "7.2 OBIA and Subpixel Analysis",
     "text": "7.2 OBIA and Subpixel Analysis\nOBIA shifts our perspective from pixels to the shapes on the ground, considering the homogeneity or heterogeneity of these shapes to better understand the landscape. Meanwhile, subpixel analysis digs deeper, attempting to quantify the exact proportions of different land cover types within a single pixel.\n\nOBIA: utilizing algorithms like SLIC for superpixel generation, OBIA provides a more detailed analysis of the landscape, revealing the nuanced differences between various land cover types.\nSubpixel analysis: identify the spectral signatures of “endmembers” to calculate their contribution to a pixel’s overall reflectance.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#accuracy-assessment",
     "href": "Week7.html#accuracy-assessment",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "7.3 Accuracy assessment",
     "text": "7.3 Accuracy assessment\nTraditional methods, such as confusion matrices and kappa coefficients, lay the foundation. However, the quest for precision leads us to modern approaches like F1 scores and ROC curves, offering a new dimension to evaluate classification models.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#spatial-autocorrelation",
     "href": "Week7.html#spatial-autocorrelation",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "7.4 Spatial autocorrelation",
     "text": "7.4 Spatial autocorrelation\nTo ensure the generalizability and accuracy of models, methods like spatial cross-validation and object-based image analysis are employed to mitigate the effects of spatial autocorrelation. This ensures that our models are not just accurate but also applicable across different geographies and conditions.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#applications",
     "href": "Week7.html#applications",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "7.5 Applications",
-    "text": "7.5 Applications\nI explore the classification methods detailed in several studies, focusing on the comparison and analysis of different approaches like Multilayer Perceptron (MLP), Adaptive Resonance Theory Map (ARTMAP), its variant ART-MMAP, Regression Tree (RT), and the shift towards Geographic Object-Based Image Analysis (GEOBIA).\nThe study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.\nIn another direction, the move towards GEOBIA as a new paradigm is discussed, marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.\nEach method has its strengths and challenges. For instance, MLP’s effectiveness in sub-pixel classification is balanced by the need for extensive training and parameter selection. ART-MMAP’s improvements over ARTMAP for sub-pixel data highlight the potential for fine-tuned models to enhance prediction accuracy. However, transitioning to GEOBIA requires overcoming significant theoretical and practical challenges, including the development of new analysis tools and adapting to a fundamentally different approach to image analysis.",
+    "text": "7.5 Applications\nI explore the classification methods detailed in several studies, focusing on the comparison and analysis of different approaches like Multilayer Perceptron (MLP), Adaptive Resonance Theory Map (ARTMAP), its variant ART-MMAP, Regression Tree (RT), and the shift towards Geographic Object-Based Image Analysis (GEOBIA).\nLiu and Wu’s (2014) study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.\nThe move towards GEOBIA as a new paradigm is discussed by Blaschke et al. (2014), marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.\nEach method has its strengths and challenges. For instance, MLP’s effectiveness in sub-pixel classification is balanced by the need for extensive training and parameter selection. ART-MMAP’s improvements over ARTMAP for sub-pixel data highlight the potential for fine-tuned models to enhance prediction accuracy. However, transitioning to GEOBIA requires overcoming significant theoretical and practical challenges, including the development of new analysis tools and adapting to a fundamentally different approach to image analysis.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   },
   {
     "objectID": "Week7.html#reflection",
     "href": "Week7.html#reflection",
-    "title": "7  Classification II",
+    "title": "7  Classification [Level up]",
     "section": "7.6 Reflection",
     "text": "7.6 Reflection\nI am struck by the profound intersection of technology and environmental science. It utilizes semi-supervised learning and convolutional neural networks to not only present data; but also reveals a new way of observing and understanding the structure of the Earth. The dynamic world dataset particularly attracts me with its near real-time capabilities because of its potential to change the way we monitor and manage Earth’s resources.\nThe shift from pixel-based to object-based image analysis and the introduction of subpixel analysis are equally fascinating. They show greater precision and details in understanding the Earth’s surface. OBIA, with its focus on shapes and textures, and subpixel analysis, with its detailed quantification within pixels, both represent a large jump in our ability to interpret satellite imagery.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#the-advantages-of-gee",
+    "href": "Week5.html#the-advantages-of-gee",
+    "title": "5  Google Earth Engine",
+    "section": "5.2 The advantages of GEE",
+    "text": "5.2 The advantages of GEE\nTechniques like median, mean, and standard deviation calculations in GEE allow for the processing of large ImageCollections, reducing them to representative values that can be further analyzed or displayed. This capability is crucial for handling the vast amounts of data available within GEE and for extracting meaningful information from global datasets, such as satellite imagery, over time and space.\nIt also facilitates advanced spatial analyses, including spatial joins and regression analysis. Spatial joins allow for the merging of geometries based on spatial relationships, enabling the combination of datasets like national park boundaries with nearby features, such as power plants or urban areas. Regression analysis in GEE, performed on a pixel-by-pixel basis across image collections, reveals trends over time, such as changes in vegetation cover or urban expansion.\nThese tools offer powerful insights into spatial dynamics, supporting decision-making in resource management, conservation planning, and sustainable development efforts.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#applications-of-gee-and-pca",
+    "href": "Week5.html#applications-of-gee-and-pca",
+    "title": "5  Google Earth Engine",
+    "section": "5.3 Applications of GEE and PCA",
+    "text": "5.3 Applications of GEE and PCA\nThe application of Google Earth Engine (GEE) and Principal Component Analysis (PCA) in monitoring environmental changes and land classification is explored in two distinct studies.\nRoy and Chintalacheruvu (2024) focuses on monitoring soil erosion susceptibility in the Godavari river basin, India, by integrating NDVI from Sentinel-2A imagery with PCA techniques for land cover classification. This approach successfully maps the region’s vegetation and land cover, identifying areas vulnerable to soil erosion. The efficiency of GEE in processing large datasets, combined with the dimensionality reduction offered by PCA, significantly enhances the capability to understand and monitor complex terrestrial features.\nPahlefi, Danoedoro and Kamal (2022) applies GEE to process Sentinel-2A satellite images for classifying and monitoring the tropical savannah grasslands of Sabu Island, Indonesia, using NDVI and PCA. This method proves effective in quickly and accurately identifying grasslands and monitoring their seasonal changes through multi-temporal NDVI data analysis, revealing the dynamics of grassland categories over time.\nAlthough two studies used similar methods, they focused on different emphasis. While the first study focuses on understanding soil erosion patterns through land cover classification, the second show the seasonal variability of grasslands, showcasing the adaptability of these methods in different research contexts.\nThe implementation of GEE and PCA across these studies demonstrates their potential for efficient and scalable environmental monitoring, lowering the costs and resources required compared to traditional field surveys. Both methods improve the accuracy and reliability of environmental assessments, providing valuable insights into land cover changes and soil erosion susceptibility. However, the reliance on data quality, especially regarding cloud cover, can impact NDVI calculations and, subsequently, the monitoring and classification outcomes. Additionally, the need for technical expertise to utilize GEE and interpret PCA results introduces challenges, emphasizing the importance of professional analysis skills in environmental research.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#reflection",
+    "href": "Week5.html#reflection",
+    "title": "5  Google Earth Engine",
+    "section": "5.4 Reflection",
+    "text": "5.4 Reflection\nReflecting on the content presented this week regarding Google Earth Engine (GEE) and its applications, including Principal Component Analysis (PCA), what stands out most is the realization of how these technologies make data analysis more efficient and effictive.\nThe aspect of GEE that impressed me most is its cloud-based platform enabling the analysis of massive Earth observation datasets. This ability to process and analyze vast amounts of data without the need for high-end computational resources on my part lowers my barrier to entry for conducting sophisticated environmental analyses because my computer often freezes when I use RStudio (my computer’s fault). It opens up opportunities for independent researchers, small organizations, and developing countries to engage in environmental research.\nFor me, the future utility of GEE and similar platforms lies in their potential to promotes a more inclusive and collaborative approach to environmental science. As we face global environmental challenges, the ability to quickly and accurately assess changes in the Earth’s ecosystems becomes increasingly crucial.\nHowever, the reliance on technical expertise and high-quality data points to a need for continued education and training in these technologies. This need opens up avenues for future work, not only in the direct application of GEE and PCA for environmental monitoring but also in the development of educational resources and tools to make these technologies more accessible to a wider audience.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#reflences",
+    "href": "Week5.html#reflences",
+    "title": "5  Google Earth Engine",
+    "section": "5.5 Reflences",
+    "text": "5.5 Reflences\n\nRoy, S. & Chintalacheruvu, M.R., 2024. Enhanced morphometric analysis for soil erosion susceptibility mapping in the Godavari river basin, India: leveraging Google Earth Engine and principal component analysis. ISH Journal of Hydraulic Engineering, 30(2), pp.228-244. doi: 10.1080/09715010.2023.2292280.\nPahlefi, M.R., Danoedoro, P. & Kamal, M., 2022. The utilisation of sentinel-2A images and google earth engine for monitoring tropical Savannah grassland. Geocarto International, 37(18), pp.5400-5414. doi: 10.1080/10106049.2021.1914749.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#references",
+    "href": "Week5.html#references",
+    "title": "5  Google Earth Engine",
+    "section": "5.5 References",
+    "text": "5.5 References\n\nRoy, S. & Chintalacheruvu, M.R., 2024. Enhanced morphometric analysis for soil erosion susceptibility mapping in the Godavari river basin, India: leveraging Google Earth Engine and principal component analysis. ISH Journal of Hydraulic Engineering, 30(2), pp.228-244. doi: 10.1080/09715010.2023.2292280.\nPahlefi, M.R., Danoedoro, P. & Kamal, M., 2022. The utilisation of sentinel-2A images and google earth engine for monitoring tropical Savannah grassland. Geocarto International, 37(18), pp.5400-5414. doi: 10.1080/10106049.2021.1914749.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#references",
+    "href": "Week3.html#references",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.8 References",
+    "text": "3.8 References\n\nDewi, E.K. & Trisakti, B., 2016. Comparing atmospheric correction methods for Landsat OLI data. International Journal of Remote Sensing and Earth Sciences, 13(2), pp.105-120.\nFuyi, T., Mohammed, S.K., Abdullah, K., Lim, H.S. & Ishola, K.S., 2013. A comparison of atmospheric correction techniques for environmental applications. In: Proceedings of the 2013 IEEE International Conference on Space Science and Communication (IconSpace), 1-3 July 2013, Melaka, Malaysia.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#references",
+    "href": "Week6.html#references",
+    "title": "6  Classification",
+    "section": "6.8 References",
+    "text": "6.8 References\n\nPal, M. & Mather, P.M., 2005a. Support vector machines for classification in remote sensing. International Journal of Remote Sensing, 26(5), pp.1007-1011. doi: 10.1080/01431160512331314083.\nPal, M., 2005b. Random forest classifier for remote sensing classification. International Journal of Remote Sensing, 26(1), pp.217-222. doi: 10.1080/01431160412331269698.\nVani, K.S., Susarla, M., Lakshmi, E.T.N., Hussain, M.S.A. & Enosh, P., 2023. Classification of vegetation using Sentinel-2 images of Jodhpur region. In: Proceedings of the 9th International Conference on Advanced Computing and Communication Systems (ICACCS).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#references",
+    "href": "Week1.html#references",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.7 References",
+    "text": "1.7 References\n\nBhaskaran, S., Datt, B., Forster, B., Neal, T. & Brown, M., 2004. Integrating imaging spectroscopy (445–2543 nm) and geographic information systems for post-disaster management: a case of hailstorm damage in Sydney. International Journal of Remote Sensing, 25(13), pp.2625-2639. doi: 10.1080/01431160310001642331.\nWyard, C., Marion, R. & Hallot, E., 2023. WaRM: A Roof Material Spectral Library for Wallonia, Belgium. Data. 8, 59. https:// doi.org/10.3390/data8030059.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html#references",
+    "href": "Week4.html#references",
+    "title": "4  Saving Lagos from Oil Pollution",
+    "section": "4.5 References",
+    "text": "4.5 References\n\nElenwo, E. I., & Akankali, J. A. (2014). Environmental policies and strategies in Nigeria oil and gas industry: gains, challenges and prospects. Natural Resources, 5(14), 884.\nNational Oil Spill Detection and Response Agency. (n.d.). Homepage. Retrieved March 16, 2024, from https://nosdra.gov.ng/\nUnited Nations Environment Programme. (2011). The 2011 Environmental Assessment of Ogoniland. https://www.unep.org/resources/report/environmental-assessment-ogoniland\nAkinwumiju, A.S., Adelodun, A.A. and Ogundeji, S.E., 2020. Geospatial assessment of oil spill pollution in the Niger Delta of Nigeria: An evidence-based evaluation of causes and potential remedies. Environmental Pollution, 267, p.115545. https://doi.org/10.1016/j.envpol.2020.115545",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Saving Lagos from Oil Pollution</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#references",
+    "href": "Week7.html#references",
+    "title": "7  Classification [Level up]",
+    "section": "7.7 References",
+    "text": "7.7 References\n\nLiu, W. and Wu, E.Y., 2014. Comparison of non-linear mixture models: sub-pixel classification. Remote Sensing of Environment, 94(2015), pp.145-154.\nBlaschke, T., Hay, G.J., Kelly, M., Lang, S., Hofmann, P., Addink, E., Feitosa, R.Q., van der Meer, F., van der Werff, H., van Coillie, F. and Tiede, D., 2014. Geographic Object-Based Image Analysis – Towards a new paradigm. ISPRS Journal of Photogrammetry and Remote Sensing, 87(2014), pp.180-191.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
   }
 ]

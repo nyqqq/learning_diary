@@ -33,3 +33,13 @@ The remotely sensed data and derived models support policy goals by enabling evi
 
 ## Reflection
 Engaging with this data and its application in Lagos has been an enlightening experience, showcasing the power of remotely sensing data in addressing complex environmental challenges. The intersection of technology, policy, and environmental science opens new avenues for sustainable urban development and disaster risk management. This case study not only deepens my understanding of the challenges faced by cities like Lagos but also highlights the potential for remote sensing technologies to contribute to global and local environmental goals. It's evident how critical remotely sensing data can be in not only understanding but actively mitigating the environmental impacts of industrial activities. I think the skills and methods applied here are not limited to oil spill monitoring but extend to broader environmental and urban challenges.
+
+## References
+
+1. Elenwo, E. I., & Akankali, J. A. (2014). Environmental policies and strategies in Nigeria oil and gas industry: gains, challenges and prospects. *Natural Resources*, 5(14), 884.
+
+2. National Oil Spill Detection and Response Agency. (n.d.). Homepage. Retrieved March 16, 2024, from https://nosdra.gov.ng/
+
+3. United Nations Environment Programme. (2011). The 2011 Environmental Assessment of Ogoniland. https://www.unep.org/resources/report/environmental-assessment-ogoniland
+
+4. Akinwumiju, A.S., Adelodun, A.A. and Ogundeji, S.E., 2020. Geospatial assessment of oil spill pollution in the Niger Delta of Nigeria: An evidence-based evaluation of causes and potential remedies. *Environmental Pollution*, 267, p.115545. https://doi.org/10.1016/j.envpol.2020.115545
