@@ -1,0 +1,97 @@
+---
+title: "Synthetic Aperture Radar"
+---
+Yeahhh!!It's the last week.
+
+This week, we studied some extra and detailed information on Synthetic Aperture Radar (SAR) based on Lecture 4 (not mentioned in the learning diary). I will again, use a mind map to help sort out the knowledge points.
+
+## What is SAR?
+
+Synthetic aperture radar (SAR) technology is an advanced remote sensing technology that uses the polarization characteristics of electromagnetic waves to observe the earth's surface. SAR sensors can emit and receive horizontally or vertically polarized electromagnetic waves. This ability makes SAR differently sensitive to ground features in different polarization states, allowing it to detect different surface features based on different surface materials and conditions.
+
+```{r  echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('image/Mindmap8.jpg')
+```
+
+**1. Mechanism:**
+
+  - Active sensors with surface texture data
+  - Capability to see through weather and clouds
+  - Utilization of different wavelengths for various applications
+
+**2. Operations**
+
+  - Emission of electromagnetic signals
+  -	Recording backscatter
+  -	Movement impacts (azimuth advancement, sweeping footprint)
+  -	Synthetic aperture creation through signal combination
+ 
+**3. Polarization** 
+
+- Different polarizations (HH, HV, VV, VH) for varied surface responses
+
+**4. Amplitude** 
+
+- Amplitude (backscatter) related to surface characteristics
+
+**5. Phase** 
+
+- Phase indicating the wave's location upon return
+
+**6. InSAR**
+
+  - Interferometric SAR
+  - Ground movement detection via phase shift
+  - Differential InSAR for topography adjustment
+
+  
+**7. Data processing**
+
+  - Pixel values as complex numbers (In-phase and Quadrature)
+  - Conversion to amplitude for visualization
+  - Processing platforms: Google Earth Engine (GEE), SNAP
+
+
+**8. Change Detection**
+
+- Challenges in subtracting images
+-	Ratio, improved ratio, and log-ratio methods
+-	Statistical tests (e.g., t-tests, ROC curves)
+
+
+**9. Image Fusion**
+
+  - Combining SAR with optical data for enhanced analysis
+  - PCA, object-based analysis, intensity fusion
+
+
+## Applications of SAR combined with previous knowledge
+
+I explore the use of Synthetic Aperture Radar (SAR) and other remote sensing technologies for environmental and urban monitoring through two distinct studies.
+
+Fan et al. (2015) utilizes a Support Vector Machine (SVM) for classifying SAR imagery to monitor oil spills. This approach confirms SVM's effectiveness in accurately identifying oil spills from natural phenomena in marine environments. The precision of SVM in distinguishing oil spills underscores its importance for environmental response efforts. 
+
+However, SAR images with poor quality may contain noise. The SVM model's ability to accurately differentiate between oil spills and natural phenomena can be compromised, leading to potential false positives or negatives. Moreover, the adaptability of SVM models to various types of oil spills and sea conditions is crucial for robust performance. But achieving such adaptability may pose challenges, as the SVM model needs to generalize well across diverse environmental contexts, which may require extensive training data representative of different scenarios. 
+
+In the study done by Zhang et al. (2014), a Random Forest (RF) algorithm is employed to combine optical and SAR imagery for impervious surface estimation. This method significantly improves the accuracy of mapping urban impervious surfaces by harnessing the strengths of both data types. The RF algorithm effectively reduces the common classification confusion between various land cover types seen with single-source data use. However, the complexity and computational demands of processing and integrating large datasets from different sensors challenge this approach.
+
+One significant challenge is the computational complexity associated with processing and integrating large datasets from multiple sensors. The RF algorithm's performance may be limited by the computational demands of handling extensive datasets, especially when combining data of varying resolutions and formats. Additionally, integrating optical and SAR data presents difficulties due to differences in data characteristics and preprocessing requirements.
+
+In summary, both the SVM and RF methods exhibit strengths in their respective applications for environmental monitoring. However, their limitations, such as sensitivity to data quality, adaptability to varying conditions, computational complexity, and generalization performance, show the need for careful consideration to ensure their effectiveness across different environmental and urban contexts.
+
+
+## Reflection
+
+I find it quite interesting how SAR works both day and night, in all weather. This is really useful for keeping an eye on Earth's surface changes, like after a disaster or for checking forest health. The way SAR can use different signals to see different things on the ground is cool because it means we can customize it for specific needs, like finding flood areas or seeing how forests change over time.
+
+Learning about how SAR can measure tiny ground shifts with techniques like InSAR shows how powerful this tech is for understanding natural disasters or changes in the Earth. It’s amazing that we can detect such small changes from space!
+
+
+The challenges mentioned, like making sure we can use SAR data effectively everywhere and understanding the changes it shows us, are important. It makes me realize that while SAR is a great tool, there’s still a lot to learn about how to use it best.
+
+## References
+
+1. Fan, J., Zhang, F., Zhao, D. and Wang, J., 2015. Oil Spill Monitoring based on SAR Remote Sensing Imagery. *Aquatic Procedia*, 3(2015), pp:112-118.
+
+
+2. Zhang, Y., Zhang, H. and Lin, H., 2014. Improving the impervious surface estimation with combined use of optical and SAR remote sensing images. *Remote Sensing of Environment*, 141(2014), pp:155-167.

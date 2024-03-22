@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary for Remotely Sensing Cities and Environment - 4&nbsp; Saving Lagos from Oil Pollution</title>
+<title>Learning Diary for Remotely Sensing Cities and Environment - 8&nbsp; Synthetic Aperture Radar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Week5.html" rel="next">
-<link href="./Week3.html" rel="prev">
+<link href="./Week7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Saving Lagos from Oil Pollution</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week4.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Week4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Saving Lagos from Oil Pollution</span></span></a>
   </div>
 </li>
@@ -156,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week8.html" class="sidebar-item-text sidebar-link">
+  <a href="./Week8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
   </div>
 </li>
@@ -170,16 +169,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-oil-pollution-in-lagos" id="toc-the-oil-pollution-in-lagos" class="nav-link active" data-scroll-target="#the-oil-pollution-in-lagos"><span class="header-section-number">4.1</span> The oil pollution in Lagos</a></li>
-  <li><a href="#policy" id="toc-policy" class="nav-link" data-scroll-target="#policy"><span class="header-section-number">4.2</span> Policy</a></li>
-  <li><a href="#applications-of-remote-sensing" id="toc-applications-of-remote-sensing" class="nav-link" data-scroll-target="#applications-of-remote-sensing"><span class="header-section-number">4.3</span> Applications of remote sensing</a>
-  <ul class="collapse">
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">4.3.1</span> Datasets</a></li>
-  <li><a href="#risk-assessment" id="toc-risk-assessment" class="nav-link" data-scroll-target="#risk-assessment"><span class="header-section-number">4.3.2</span> Risk assessment</a></li>
-  <li><a href="#policy-application" id="toc-policy-application" class="nav-link" data-scroll-target="#policy-application"><span class="header-section-number">4.3.3</span> Policy application</a></li>
-  </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.4</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.5</span> References</a></li>
+  <li><a href="#what-is-sar" id="toc-what-is-sar" class="nav-link active" data-scroll-target="#what-is-sar"><span class="header-section-number">8.1</span> What is SAR?</a></li>
+  <li><a href="#applications-of-sar-combined-with-previous-knowledge" id="toc-applications-of-sar-combined-with-previous-knowledge" class="nav-link" data-scroll-target="#applications-of-sar-combined-with-previous-knowledge"><span class="header-section-number">8.2</span> Applications of SAR combined with previous knowledge</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Saving Lagos from Oil Pollution</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></h1>
 </div>
 
 
@@ -205,56 +198,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>It’s week 4! This week, I choose a city Lagos in Nigeria which faces the risk of oil pollution all year round. Let’s see how can remote sensing data combined with policies save this city.</p>
-<section id="the-oil-pollution-in-lagos" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="the-oil-pollution-in-lagos"><span class="header-section-number">4.1</span> The oil pollution in Lagos</h2>
-<p>Over the past 50 years, it’s estimated that more than 1.5 million tons of oil have spilled in the Niger Delta. Residential areas in nine districts of the delta suffer from oil spills every year due to accidental discharges and operational spills. Lagos, being one of the most populous cities in Africa, faces numerous environmental challenges, including the risk of oil spills due to its proximity to the Niger Delta.</p>
+<p>Yeahhh!!It’s the last week.</p>
+<p>This week, we studied some extra and detailed information on Synthetic Aperture Radar (SAR) based on Lecture 4 (not mentioned in the learning diary). I will again, use a mind map to help sort out the knowledge points.</p>
+<section id="what-is-sar" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="what-is-sar"><span class="header-section-number">8.1</span> What is SAR?</h2>
+<p>Synthetic aperture radar (SAR) technology is an advanced remote sensing technology that uses the polarization characteristics of electromagnetic waves to observe the earth’s surface. SAR sensors can emit and receive horizontally or vertically polarized electromagnetic waves. This ability makes SAR differently sensitive to ground features in different polarization states, allowing it to detect different surface features based on different surface materials and conditions.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="image/Lagos.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
-<figcaption>The location of Lagos. Source: <a href="https://www.bayelsacommission.org/wp-content/uploads/2019/03/20190330_DAM992.jpg">bayelsacommission</a></figcaption>
+<p><img src="image/Mindmap8.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="policy" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="policy"><span class="header-section-number">4.2</span> Policy</h2>
+<p><strong>1. Mechanism:</strong></p>
 <ul>
-<li><p>Global Policy: Emphasizes international cooperation in environmental protection and oil spill response, following guidelines set by organizations such as the International Maritime Organization (IMO) and the United Nations Environment Programme (UNEP).</p></li>
-<li><p>Metropolitan Policy: Lagos State’s policies focus on sustainable urban development, environmental protection, and disaster risk management. These include measures to prevent industrial pollution and ensure quick response to environmental disasters.</p></li>
+<li>Active sensors with surface texture data</li>
+<li>Capability to see through weather and clouds</li>
+<li>Utilization of different wavelengths for various applications</li>
+</ul>
+<p><strong>2. Operations</strong></p>
+<ul>
+<li>Emission of electromagnetic signals</li>
+<li>Recording backscatter</li>
+<li>Movement impacts (azimuth advancement, sweeping footprint)</li>
+<li>Synthetic aperture creation through signal combination</li>
+</ul>
+<p><strong>3. Polarization</strong></p>
+<ul>
+<li>Different polarizations (HH, HV, VV, VH) for varied surface responses</li>
+</ul>
+<p><strong>4. Amplitude</strong></p>
+<ul>
+<li>Amplitude (backscatter) related to surface characteristics</li>
+</ul>
+<p><strong>5. Phase</strong></p>
+<ul>
+<li>Phase indicating the wave’s location upon return</li>
+</ul>
+<p><strong>6. InSAR</strong></p>
+<ul>
+<li>Interferometric SAR</li>
+<li>Ground movement detection via phase shift</li>
+<li>Differential InSAR for topography adjustment</li>
+</ul>
+<p><strong>7. Data processing</strong></p>
+<ul>
+<li>Pixel values as complex numbers (In-phase and Quadrature)</li>
+<li>Conversion to amplitude for visualization</li>
+<li>Processing platforms: Google Earth Engine (GEE), SNAP</li>
+</ul>
+<p><strong>8. Change Detection</strong></p>
+<ul>
+<li>Challenges in subtracting images</li>
+<li>Ratio, improved ratio, and log-ratio methods</li>
+<li>Statistical tests (e.g., t-tests, ROC curves)</li>
+</ul>
+<p><strong>9. Image Fusion</strong></p>
+<ul>
+<li>Combining SAR with optical data for enhanced analysis</li>
+<li>PCA, object-based analysis, intensity fusion</li>
 </ul>
 </section>
-<section id="applications-of-remote-sensing" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="applications-of-remote-sensing"><span class="header-section-number">4.3</span> Applications of remote sensing</h2>
-<section id="datasets" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="datasets"><span class="header-section-number">4.3.1</span> Datasets</h3>
-<p>The oil spill data, oil well data, and oil pipeline network data are complemented by EO datasets such as SPOT 6 DEM and Imagery, soil maps, and land use landcover maps. These datasets are instrumental in mapping and analyzing the spatial distribution of oil facilities and incidents. The high-resolution SPOT 6 imagery and DEM, with resolutions of 20m and 10m respectively, enable precise identification of oil spill locations and the surrounding environmental context.</p>
+<section id="applications-of-sar-combined-with-previous-knowledge" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="applications-of-sar-combined-with-previous-knowledge"><span class="header-section-number">8.2</span> Applications of SAR combined with previous knowledge</h2>
+<p>I explore the use of Synthetic Aperture Radar (SAR) and other remote sensing technologies for environmental and urban monitoring through two distinct studies.</p>
+<p>Fan et al.&nbsp;(2015) utilizes a Support Vector Machine (SVM) for classifying SAR imagery to monitor oil spills. This approach confirms SVM’s effectiveness in accurately identifying oil spills from natural phenomena in marine environments. The precision of SVM in distinguishing oil spills underscores its importance for environmental response efforts.</p>
+<p>However, SAR images with poor quality may contain noise. The SVM model’s ability to accurately differentiate between oil spills and natural phenomena can be compromised, leading to potential false positives or negatives. Moreover, the adaptability of SVM models to various types of oil spills and sea conditions is crucial for robust performance. But achieving such adaptability may pose challenges, as the SVM model needs to generalize well across diverse environmental contexts, which may require extensive training data representative of different scenarios.</p>
+<p>In the study done by Zhang et al.&nbsp;(2014), a Random Forest (RF) algorithm is employed to combine optical and SAR imagery for impervious surface estimation. This method significantly improves the accuracy of mapping urban impervious surfaces by harnessing the strengths of both data types. The RF algorithm effectively reduces the common classification confusion between various land cover types seen with single-source data use. However, the complexity and computational demands of processing and integrating large datasets from different sensors challenge this approach.</p>
+<p>One significant challenge is the computational complexity associated with processing and integrating large datasets from multiple sensors. The RF algorithm’s performance may be limited by the computational demands of handling extensive datasets, especially when combining data of varying resolutions and formats. Additionally, integrating optical and SAR data presents difficulties due to differences in data characteristics and preprocessing requirements.</p>
+<p>In summary, both the SVM and RF methods exhibit strengths in their respective applications for environmental monitoring. However, their limitations, such as sensitivity to data quality, adaptability to varying conditions, computational complexity, and generalization performance, show the need for careful consideration to ensure their effectiveness across different environmental and urban contexts.</p>
 </section>
-<section id="risk-assessment" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="risk-assessment"><span class="header-section-number">4.3.2</span> Risk assessment</h3>
-<p>First, using GIS-based Kernel Density algorithms to identify hotspots of oil spill incidents and high-density areas for oil facilities.</p>
-<p>Then, Digital Elevation Model (DEM), and soil map data can be used to assess the risk and vulnerability of different areas to oil spills incorporating land cover. Using a GIS-based fuzzy logic model (FLM) helps in generating oil spill hazard, vulnerability, and risk indices, categorizing areas by risk level. The output values were categorized into five classes: Very High risk (VHR), High risk (HR), Moderate risk (MR), Low risk (LR), and Very Low risk (VLR). Each hazard was characterized by its origin, magnitude, frequency, and probability. Fuzzification and fuzzy overlay algorithms were employed to generate a hazard model by integrating potential sources of events. Vulnerability refers to the level of exposure of both the natural ecosystem and anthropogenic establishments to potential oil spills.</p>
-<p>The risk assessment is generated by the integration of the generated hazard and vulnerability maps.</p>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>I find it quite interesting how SAR works both day and night, in all weather. This is really useful for keeping an eye on Earth’s surface changes, like after a disaster or for checking forest health. The way SAR can use different signals to see different things on the ground is cool because it means we can customize it for specific needs, like finding flood areas or seeing how forests change over time.</p>
+<p>Learning about how SAR can measure tiny ground shifts with techniques like InSAR shows how powerful this tech is for understanding natural disasters or changes in the Earth. It’s amazing that we can detect such small changes from space!</p>
+<p>The challenges mentioned, like making sure we can use SAR data effectively everywhere and understanding the changes it shows us, are important. It makes me realize that while SAR is a great tool, there’s still a lot to learn about how to use it best.</p>
 </section>
-<section id="policy-application" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="policy-application"><span class="header-section-number">4.3.3</span> Policy application</h3>
-<p>The remotely sensed data and derived models support policy goals by enabling evidence-based decision-making. For Lagos, this means identifying areas at greatest risk more efficiently, accuratly and effectively, prioritizing resources for monitoring and clean-up, and informing urban planning to reduce vulnerability to spills.</p>
-</section>
-</section>
-<section id="reflection" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.4</span> Reflection</h2>
-<p>Engaging with this data and its application in Lagos has been an enlightening experience, showcasing the power of remotely sensing data in addressing complex environmental challenges. The intersection of technology, policy, and environmental science opens new avenues for sustainable urban development and disaster risk management. This case study not only deepens my understanding of the challenges faced by cities like Lagos but also highlights the potential for remote sensing technologies to contribute to global and local environmental goals. It’s evident how critical remotely sensing data can be in not only understanding but actively mitigating the environmental impacts of industrial activities. I think the skills and methods applied here are not limited to oil spill monitoring but extend to broader environmental and urban challenges.</p>
-</section>
-<section id="references" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="references"><span class="header-section-number">4.5</span> References</h2>
+<section id="references" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
 <ol type="1">
-<li><p>Elenwo, E. I., &amp; Akankali, J. A. (2014). Environmental policies and strategies in Nigeria oil and gas industry: gains, challenges and prospects. <em>Natural Resources</em>, 5(14), 884.</p></li>
-<li><p>National Oil Spill Detection and Response Agency. (n.d.). Homepage. Retrieved March 16, 2024, from https://nosdra.gov.ng/</p></li>
-<li><p>United Nations Environment Programme. (2011). The 2011 Environmental Assessment of Ogoniland. https://www.unep.org/resources/report/environmental-assessment-ogoniland</p></li>
-<li><p>Akinwumiju, A.S., Adelodun, A.A. and Ogundeji, S.E., 2020. Geospatial assessment of oil spill pollution in the Niger Delta of Nigeria: An evidence-based evaluation of causes and potential remedies. <em>Environmental Pollution</em>, 267, p.115545. https://doi.org/10.1016/j.envpol.2020.115545</p></li>
+<li><p>Fan, J., Zhang, F., Zhao, D. and Wang, J., 2015. Oil Spill Monitoring based on SAR Remote Sensing Imagery. <em>Aquatic Procedia</em>, 3(2015), pp:112-118.</p></li>
+<li><p>Zhang, Y., Zhang, H. and Lin, H., 2014. Improving the impervious surface estimation with combined use of optical and SAR remote sensing images. <em>Remote Sensing of Environment</em>, 141(2014), pp:155-167.</p></li>
 </ol>
 
 
@@ -650,14 +676,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Week3.html" class="pagination-link  aria-label=" &lt;span="" the="" essense="" of="" data&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Touch the Essense of Data</span></span>
+      <a href="./Week7.html" class="pagination-link  aria-label=" &lt;span="" [level="" up]&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification [Level up]</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Week5.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Google Earth Engine</span>">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

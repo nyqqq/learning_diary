@@ -618,5 +618,55 @@
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification [Level up]</span>"
     ]
+  },
+  {
+    "objectID": "Week8.html",
+    "href": "Week8.html",
+    "title": "8  Synthetic Aperture Radar",
+    "section": "",
+    "text": "8.1 What is SAR?\nSynthetic aperture radar (SAR) technology is an advanced remote sensing technology that uses the polarization characteristics of electromagnetic waves to observe the earth’s surface. SAR sensors can emit and receive horizontally or vertically polarized electromagnetic waves. This ability makes SAR differently sensitive to ground features in different polarization states, allowing it to detect different surface features based on different surface materials and conditions.\n1. Mechanism:\n2. Operations\n3. Polarization\n4. Amplitude\n5. Phase\n6. InSAR\n7. Data processing\n8. Change Detection\n9. Image Fusion",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Synthetic Aperture Radar</span>"
+    ]
+  },
+  {
+    "objectID": "Week8.html#reflection",
+    "href": "Week8.html#reflection",
+    "title": "8  Synthetic Aperture Radar",
+    "section": "8.3 Reflection",
+    "text": "8.3 Reflection\nI find it quite interesting how SAR works both day and night, in all weather. This is really useful for keeping an eye on Earth’s surface changes, like after a disaster or for checking forest health. The way SAR can use different signals to see different things on the ground is cool because it means we can customize it for specific needs, like finding flood areas or seeing how forests change over time.\nLearning about how SAR can measure tiny ground shifts with techniques like InSAR shows how powerful this tech is for understanding natural disasters or changes in the Earth. It’s amazing that we can detect such small changes from space!\nThe challenges mentioned, like making sure we can use SAR data effectively everywhere and understanding the changes it shows us, are important. It makes me realize that while SAR is a great tool, there’s still a lot to learn about how to use it best.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Synthetic Aperture Radar</span>"
+    ]
+  },
+  {
+    "objectID": "Week8.html#references",
+    "href": "Week8.html#references",
+    "title": "8  Synthetic Aperture Radar",
+    "section": "8.4 References",
+    "text": "8.4 References\n\nFan, J., Zhang, F., Zhao, D. and Wang, J., 2015. Oil Spill Monitoring based on SAR Remote Sensing Imagery. Aquatic Procedia, 3(2015), pp:112-118.\nZhang, Y., Zhang, H. and Lin, H., 2014. Improving the impervious surface estimation with combined use of optical and SAR remote sensing images. Remote Sensing of Environment, 141(2014), pp:155-167.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Synthetic Aperture Radar</span>"
+    ]
+  },
+  {
+    "objectID": "Week8.html#applications-of-sar-combined-with-previous-knowledge",
+    "href": "Week8.html#applications-of-sar-combined-with-previous-knowledge",
+    "title": "8  Synthetic Aperture Radar",
+    "section": "8.2 Applications of SAR combined with previous knowledge",
+    "text": "8.2 Applications of SAR combined with previous knowledge\nI explore the use of Synthetic Aperture Radar (SAR) and other remote sensing technologies for environmental and urban monitoring through two distinct studies.\nFan et al. (2015) utilizes a Support Vector Machine (SVM) for classifying SAR imagery to monitor oil spills. This approach confirms SVM’s effectiveness in accurately identifying oil spills from natural phenomena in marine environments. The precision of SVM in distinguishing oil spills underscores its importance for environmental response efforts.\nHowever, SAR images with poor quality may contain noise. The SVM model’s ability to accurately differentiate between oil spills and natural phenomena can be compromised, leading to potential false positives or negatives. Moreover, the adaptability of SVM models to various types of oil spills and sea conditions is crucial for robust performance. But achieving such adaptability may pose challenges, as the SVM model needs to generalize well across diverse environmental contexts, which may require extensive training data representative of different scenarios.\nIn the study done by Zhang et al. (2014), a Random Forest (RF) algorithm is employed to combine optical and SAR imagery for impervious surface estimation. This method significantly improves the accuracy of mapping urban impervious surfaces by harnessing the strengths of both data types. The RF algorithm effectively reduces the common classification confusion between various land cover types seen with single-source data use. However, the complexity and computational demands of processing and integrating large datasets from different sensors challenge this approach.\nOne significant challenge is the computational complexity associated with processing and integrating large datasets from multiple sensors. The RF algorithm’s performance may be limited by the computational demands of handling extensive datasets, especially when combining data of varying resolutions and formats. Additionally, integrating optical and SAR data presents difficulties due to differences in data characteristics and preprocessing requirements.\nIn summary, both the SVM and RF methods exhibit strengths in their respective applications for environmental monitoring. However, their limitations, such as sensitivity to data quality, adaptability to varying conditions, computational complexity, and generalization performance, show the need for careful consideration to ensure their effectiveness across different environmental and urban contexts.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Synthetic Aperture Radar</span>"
+    ]
+  },
+  {
+    "objectID": "Week8.html#what-is-sar",
+    "href": "Week8.html#what-is-sar",
+    "title": "8  Synthetic Aperture Radar",
+    "section": "",
+    "text": "Active sensors with surface texture data\nCapability to see through weather and clouds\nUtilization of different wavelengths for various applications\n\n\n\nEmission of electromagnetic signals\nRecording backscatter\nMovement impacts (azimuth advancement, sweeping footprint)\nSynthetic aperture creation through signal combination\n\n\n\nDifferent polarizations (HH, HV, VV, VH) for varied surface responses\n\n\n\nAmplitude (backscatter) related to surface characteristics\n\n\n\nPhase indicating the wave’s location upon return\n\n\n\nInterferometric SAR\nGround movement detection via phase shift\nDifferential InSAR for topography adjustment\n\n\n\nPixel values as complex numbers (In-phase and Quadrature)\nConversion to amplitude for visualization\nProcessing platforms: Google Earth Engine (GEE), SNAP\n\n\n\nChallenges in subtracting images\nRatio, improved ratio, and log-ratio methods\nStatistical tests (e.g., t-tests, ROC curves)\n\n\n\nCombining SAR with optical data for enhanced analysis\nPCA, object-based analysis, intensity fusion",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Synthetic Aperture Radar</span>"
+    ]
   }
 ]
