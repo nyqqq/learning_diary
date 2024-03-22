@@ -1,0 +1,11 @@
+---
+title: "Week5"
+---
+
+## What is Google Earth Engine?
+Google Earth Engine (GEE) is an advanced cloud-based platform designed for environmental data analysis. It allows researchers, scientists, and enthusiasts to process and analyze vast amounts of Earth observation data.
+
+### Key jargons
+
+
+### Client Side vs Server side

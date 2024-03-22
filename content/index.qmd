@@ -1,9 +1,13 @@
-# Preface {.unnumbered}
+# Introduction {.unnumbered}
 
-This is a Quarto book.
+This is a learning diary created by Yuqing Niu.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+I come from Shanghai, China, and I am a food and travel enthusiast. I graduated with a bachelor's degree in Mathematics from Shanghai University, and my undergraduate thesis focused on optimization algorithms in dynamic systems. I am currently studying Urban Spatial Science at UCL's Centre for Advanced Spatial Analysis (CASA). I have a passion for data analysis, mathematical modeling, and the application of optimization algorithms in spatial contexts.
 
-```{r}
-1 + 1
+```{r  echo=FALSE, out.width='60%', fig.align='center'}
+knitr::include_graphics('image/Me.jpg')
 ```
+
+This learning diary, created with Quarto and Xaringan, is primarily inspired by the course CASA0023: Remotely Sensing Cities and Environment, led by Andy. The diary introduces key learnings from the course materials provided. I extend my sincere gratitude to Andy for his invaluable guidance and expertise.
+
+Should you spot any inaccuracies or wish to offer feedback, I welcome you to reach out. Moreover, I'm always open to engaging in discussions about remote sensing. Feel free to contact me for any queries or dialogue.

@@ -10,9 +10,9 @@ This week, we delved into the processing of remote sensing data covering correct
 
 1. Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.
 2. Digital number (DN): Raw data collected by satellites, representing the brightness values of images.
-3. Irradiance: The amount of radiation from sun to the earth surface.
+3. Irradiance: The amount of radiation from sun to Earth's surface.
 4. Path radiance: Radiance that is reflected above the surface.
-5. Radiance: The amount of radiation from earth surface to the sensor.
+5. Radiance: The amount of radiation from Earth's surface to the sensor.
 6. Reflectance: The ratio of light leaving to light striking. It's the property of the material.
 7. Mosaicking: The process to merge two images.
 8. Nadir: The direction pointing directly downwards from the sensor, with no angular deviation.
@@ -34,7 +34,7 @@ Data may be distorted because of several factors:
 - View angle off-nadir
 - Topography contains not flat ground
 - Wind
-- Rotation of the earth
+- Rotation of Earth
 
 The correction of EO data is realised based on the 'golden standard image' which is the true image using linear regression. There are two ways:
 
@@ -82,12 +82,16 @@ knitr::include_graphics('image/solar_zenith.png')
 ```
 
 ### Summary of corrections
-
+```{r  echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('image/flowchart.jpg')
+```
 
 ### Exciting news
 Sounds complicated, right?
 
 A good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.
+
+**However**, the algorithms often rely on data from other satellites, such as MODIS, to simulate various elements in the atmosphere. If these data themselves are affected by the atmosphere, then using them as a basis for correction could introduce errors.
 
 ## Dataset joining
 When mosaicking for our study area, the brightness, colour or some images properties may differ, which will cause a seamline between them. Thus, we will feather the base image and the second image: 
@@ -115,7 +119,7 @@ variance shift to up/down/left/right
 
 ## Application of corrections in literature
 
-In the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.
+In the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.
 
 The study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.
 
@@ -125,7 +129,7 @@ These papers underscore the critical need to select atmospheric correction techn
 
 In conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount. 
 
-## Reflections
+## Reflection
 
 Reflecting on this week's content, I'm particularly fascinated by the complex interplay between the theoretical aspects of remote sensing data processing and their practical applications in environmental monitoring. The nuanced understanding of atmospheric attenuation, radiometric calibration, and the various corrections—geometric, atmospheric, and orthorectification—highlights the intricate challenges inherent in deriving accurate and useful data from satellite imagery. The notion that the journey of electromagnetic radiation, from its source to the sensor, is fraught with alterations by atmospheric conditions, terrain, and human-induced factors, underscores the importance of these corrections in ensuring data reliability.
 

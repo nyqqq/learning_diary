@@ -14,9 +14,9 @@
     "href": "index.html",
     "title": "Learning Diary for Remotely Sensing Cities and Environment",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Introduction\nThis is a learning diary created by Yuqing Niu.\nI come from Shanghai, China, and I am a food and travel enthusiast. I graduated with a bachelor’s degree in Mathematics from Shanghai University, and my undergraduate thesis focused on optimization algorithms in dynamic systems. I am currently studying Urban Spatial Science at UCL’s Centre for Advanced Spatial Analysis (CASA). I have a passion for data analysis, mathematical modeling, and the application of optimization algorithms in spatial contexts.\n\n\n\n\n\n\n\n\n\nThis learning diary, created with Quarto and Xaringan, is primarily inspired by the course CASA0023: Remotely Sensing Cities and Environment, led by Andy. The diary introduces key learnings from the course materials provided. I extend my sincere gratitude to Andy for his invaluable guidance and expertise.\nShould you spot any inaccuracies or wish to offer feedback, I welcome you to reach out. Moreover, I’m always open to engaging in discussions about remote sensing. Feel free to contact me for any queries or dialogue.",
     "crumbs": [
-      "Preface"
+      "Introduction"
     ]
   },
   {
@@ -64,7 +64,7 @@
     "href": "Week3.html#dictionary",
     "title": "3  Touch the Essense of Data",
     "section": "",
-    "text": "Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.\nDigital number (DN): Raw data collected by satellites, representing the brightness values of images.\nIrradiance: The amount of radiation from sun to the earth surface.\nPath radiance: Radiance that is reflected above the surface.\nRadiance: The amount of radiation from earth surface to the sensor.\nReflectance: The ratio of light leaving to light striking. It’s the property of the material.\nMosaicking: The process to merge two images.\nNadir: The direction pointing directly downwards from the sensor, with no angular deviation.",
+    "text": "Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.\nDigital number (DN): Raw data collected by satellites, representing the brightness values of images.\nIrradiance: The amount of radiation from sun to Earth’s surface.\nPath radiance: Radiance that is reflected above the surface.\nRadiance: The amount of radiation from Earth’s surface to the sensor.\nReflectance: The ratio of light leaving to light striking. It’s the property of the material.\nMosaicking: The process to merge two images.\nNadir: The direction pointing directly downwards from the sensor, with no angular deviation.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "Week3.html#application-of-corrections-in-literature",
     "title": "3  Touch the Essense of Data",
     "section": "3.6 Application of corrections in literature",
-    "text": "3.6 Application of corrections in literature\nIn the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.\nThe study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.\nOn the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.\nThese papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.\nIn conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.",
+    "text": "3.6 Application of corrections in literature\nIn the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.\nThe study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.\nOn the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.\nThese papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.\nIn conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "Week3.html#corrections",
     "title": "3  Touch the Essense of Data",
     "section": "3.3 Corrections",
-    "text": "3.3 Corrections\n\n3.3.1 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip (REMEMBER WEEK 1). The first station is atmosphere, then the ground which is covered by different materials and experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction\n\n\n\n3.3.2 Geometric correction\nData may be distorted because of several factors:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of the earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image;\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nGeometric correction procedures. Source: researchgate\n\n\n\n\nThink: Which way is better?\n\n\n3.3.3 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it. Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.\nThere are three types:\n\nRelative\n\n\nDark object subtraction (DOS): assume the darkest value of pixel in the image should be 0;\nPseudo-invariant features (PIFs): linear regression with the coefficients calculating from objects not change.\n\n\nAbsolute\n\nIt involves converting digital brightness values to scaled surface reflectance, facilitating comparisons across different regions of the planet. This is achieved through atmospheric radiative transfer models, such as MODTRAN 4+ and Py6S.\n\nEmpirical life correction\n\n\\[\nReflectance (field spectrum) = gain × radiance (input data) + offset\n\\] whew gain is atmospheric attenuation, offset is path radiance. We often choose a light object and a dark object on site and use the measured reflectance to calculate the empirical line, and then apply the line to all things.\n\n\n\n\n\nExample of an empirical line using two targets of contrasting albedo. Source: researchgate\n\n\n\n\n\n\n3.3.4 Orthorectification/topographic correction\nThe purpose of orthorectification correction is to make pixels viewed at nadiar.\nSolar zenith and solar azimuth describing the illumination source will be used in the formula.\n\n\n\n\n\nSolar zenith and solar azimuth Source: catalyst.earth\n\n\n\n\n\n\n3.3.5 Summary of corrections\n\n\n3.3.6 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.",
+    "text": "3.3 Corrections\n\n3.3.1 Why we need corrections on data?\nBefore the wave return to the sensor and form data, it will travel through a looong trip (REMEMBER WEEK 1). The first station is atmosphere, then the ground which is covered by different materials and experience different weather. All those scenes can affect the accuracy of data indicating the importance of corrections. The corrections often includes:\n\nGeometric correction\nAtmosphere correction\nOrthorectification correction / topographic correction\n\n\n\n3.3.2 Geometric correction\nData may be distorted because of several factors:\n\nView angle off-nadir\nTopography contains not flat ground\nWind\nRotation of Earth\n\nThe correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:\n\nFrom EO Data to True Image: the EO data is input (dependent variables) and we will get the true image data (independent variables), that is, we can know where is the EO data point on the true image;\nFrom True Image to EO Data: the true image is input (dependent variables) and we will get the EO data (independent variables), that is, we can know points on the true image should come from which EO data point.\n\n\n\n\n\n\nGeometric correction procedures. Source: researchgate\n\n\n\n\nThink: Which way is better?\n\n\n3.3.3 Atmospheric correction\nAlways use this correction if you want to get precise data!\nWhen waves cross the atmosphere, the particles will scatter or absorb part of it. Scattering will create “adjacency effect” which means radiance from pixels nearby mixed into pixel of interest.\nThere are three types:\n\nRelative\n\n\nDark object subtraction (DOS): assume the darkest value of pixel in the image should be 0;\nPseudo-invariant features (PIFs): linear regression with the coefficients calculating from objects not change.\n\n\nAbsolute\n\nIt involves converting digital brightness values to scaled surface reflectance, facilitating comparisons across different regions of the planet. This is achieved through atmospheric radiative transfer models, such as MODTRAN 4+ and Py6S.\n\nEmpirical life correction\n\n\\[\nReflectance (field spectrum) = gain × radiance (input data) + offset\n\\] whew gain is atmospheric attenuation, offset is path radiance. We often choose a light object and a dark object on site and use the measured reflectance to calculate the empirical line, and then apply the line to all things.\n\n\n\n\n\nExample of an empirical line using two targets of contrasting albedo. Source: researchgate\n\n\n\n\n\n\n3.3.4 Orthorectification/topographic correction\nThe purpose of orthorectification correction is to make pixels viewed at nadiar.\nSolar zenith and solar azimuth describing the illumination source will be used in the formula.\n\n\n\n\n\nSolar zenith and solar azimuth Source: catalyst.earth\n\n\n\n\n\n\n3.3.5 Summary of corrections\n\n\n\n\n\n\n\n\n\n\n\n3.3.6 Exciting news\nSounds complicated, right?\nA good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.\nHowever, the algorithms often rely on data from other satellites, such as MODIS, to simulate various elements in the atmosphere. If these data themselves are affected by the atmosphere, then using them as a basis for correction could introduce errors.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
     ]
@@ -267,6 +267,256 @@
     "text": "1.4 Something about the practical\n\n1.4.1 Landsat and Sentinel\nLandsat and Sentinel are both satellite programs used for Earth observation. Landsat, a joint program of NASA and the US Geological Survey, has been providing continuous global coverage since the 1970s. On the other hand, the Sentinel satellites are part of the European Union’s Copernicus program, designed for environmental monitoring with a more frequent revisit time.\nIf we need to compare the data from Landsat and Sentinel of a study area, the thing has to be aware of is the band of Landsat is wider than Sentinel.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#applications-of-spectral-signatures",
+    "href": "Week1.html#applications-of-spectral-signatures",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.5 Applications of spectral signatures",
+    "text": "1.5 Applications of spectral signatures\nI explore the application of spectral signatures to roof materials.\nThe varied implementations of spectral signature technology — especially Spectral Angle Mapper (SAM) and traditional spectral signature analysis — demonstrate the flexibility and efficacy of this technology in tackling complex application scenarios.\nIn the context of post-disaster management, as illustrated in “Integrating Imaging Spectroscopy (445–2543 nm) and Geographic Information Systems for Post-Disaster Management: A Case of Hailstorm Damage in Sydney,” the application of spectral signature technology, particularly the SAM method, showcases its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.\nHowever, the application of the SAM method also faces challenges, primarily the dependency on accurate and representative reference spectral libraries. Additionally, despite SAM’s insensitivity to variations in lighting conditions, field verification remains an indispensable step to ensure classification accuracy, which may increase the time and cost of the research.\nOn the other hand, in studies focusing on urban roofing material classification, such as “Methodology for Urban Roof Material Classification from Hyperspectral Data,” traditional spectral signature analysis methods applied to hyperspectral data demonstrate their capability in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.\nHowever, this method is sensitive to lighting conditions and may require complex data preprocessing steps, such as atmospheric correction and normalization, adding to the complexity of the analysis.\nThe application of the SAM method in post-disaster management highlights the importance of spectral techniques in rapid disaster response and resource allocation. In contrast, traditional spectral signature methods in urban roofing material classification research exhibit their strengths in detailed material identification.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#reflection",
+    "href": "Week1.html#reflection",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.6 Reflection",
+    "text": "1.6 Reflection\nThe fundamental concept of acquiring information about Earth’s surface from a distance, without physical contact, opens up a world of possibilities for understanding our planet in ways that were unimaginable just a few decades ago.\nThe coverage on the electromagnetic spectrum and its significance in remote sensing particularly resonated with me. The explanation of how different wavelengths interact with Earth’s surface materials, allowing for the discrimination between various land covers, is a testament to the power of remote sensing in environmental monitoring, agriculture, and urban planning. This knowledge is not just academic; it has real-world applications that can lead to more informed decision-making and sustainable practices.\nThe advancements in sensor technology, data analysis tools, and the increasing accessibility of satellite data open up new avenues for exploration and innovation. While the current applications are vast, the potential for future developments is boundless. Whether it’s enhancing our understanding of climate change impacts, improving agricultural yields, or planning smarter cities, remote sensing stands at the forefront of technological advancement in our quest to understand and manage the Earth’s resources more effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#reflection",
+    "href": "Week3.html#reflection",
+    "title": "3  Touch the Essense of Data",
+    "section": "3.7 Reflection",
+    "text": "3.7 Reflection\nReflecting on this week’s content, I’m particularly fascinated by the complex interplay between the theoretical aspects of remote sensing data processing and their practical applications in environmental monitoring. The nuanced understanding of atmospheric attenuation, radiometric calibration, and the various corrections—geometric, atmospheric, and orthorectification—highlights the intricate challenges inherent in deriving accurate and useful data from satellite imagery. The notion that the journey of electromagnetic radiation, from its source to the sensor, is fraught with alterations by atmospheric conditions, terrain, and human-induced factors, underscores the importance of these corrections in ensuring data reliability.\nThe methodologies and tools discussed, such as radiative transfer models (e.g., MODTRAN 4+ and Py6S) and the empirical line method, showcase the scientific community’s efforts to enhance data accuracy. It’s enlightening to understand that despite the complexity of these processes, advancements in remote sensing technologies and algorithms have made it increasingly feasible to obtain high-quality, corrected datasets. This progression not only makes remote sensing data more accessible but also amplifies its utility across a broad spectrum of environmental studies.\nFrom a personal standpoint, the aspect of atmospheric correction and its critical role in environmental applications captivates me. Knowing that different correction methods (e.g., DOS, FLAASH, ATCOR) can yield varied results depending on the specific context (e.g., vegetation, water bodies, atmospheric conditions) provides a deep insight into the necessity of selecting the appropriate technique for each study. This selection process, nuanced and dependent on the environmental parameter in question, exemplifies the critical thinking required in environmental science.\nLooking to the future, the skills and knowledge gained this week have profound implications for my potential involvement in environmental monitoring projects. Understanding how to process and correct remote sensing data ensures that I can contribute to generating accurate and meaningful insights into environmental changes, such as deforestation, urban expansion, and climate change impacts. Moreover, the discussion about dataset joining and enhancements like contrast, edge, and texture enhancements piques my interest in exploring how these techniques can be applied to improve data visualization and interpretation.\nHowever, the acknowledgment of the limitations and potential inaccuracies inherent in atmospheric correction algorithms serves as a reminder of the need for continuous improvement in remote sensing technologies and methodologies. It suggests that while current tools and data are immensely valuable, there is always room for innovation that could lead to even more precise and reliable environmental monitoring solutions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Touch the Essense of Data</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#resolution",
+    "href": "Week1.html#resolution",
+    "title": "1  Hello Remote Sensing!",
+    "section": "1.3 Resolution",
+    "text": "1.3 Resolution\n\nSpatial resolution: The size of one pixel on the ground.\nSpectral resolution: The number of spectral bands that a sensor can measure.\n\nWe can take reflectance for each wavelength (or a band of several wavelengths) across the electromagnetic spectrum to create a spectral signature. Every feature on Earth will have a unique spectral signature.\n\n\n\n\n\n\n\nSource: reasearchgate\n\n\n\n\n\nTemporal resolution: How often a sensor acquires data over the same location.\nRadiometric resolution: The sensitivity of a sensor to variations in signal strength due to different brightness levels that can be recorded by the sensor in each spectral band.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello Remote Sensing!</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html",
+    "href": "Week4.html",
+    "title": "4  Saving Lagos from Oil Pollution",
+    "section": "",
+    "text": "4.1 The oil pollution in Lagos\nOver the past 50 years, it’s estimated that more than 1.5 million tons of oil have spilled in the Niger Delta. Residential areas in nine districts of the delta suffer from oil spills every year due to accidental discharges and operational spills. Lagos, being one of the most populous cities in Africa, faces numerous environmental challenges, including the risk of oil spills due to its proximity to the Niger Delta.\nThe location of Lagos. Source: bayelsacommission",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Saving Lagos from Oil Pollution</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html#policy",
+    "href": "Week4.html#policy",
+    "title": "4  Saving Lagos from Oil Pollution",
+    "section": "4.2 Policy",
+    "text": "4.2 Policy\n\nGlobal Policy: Emphasizes international cooperation in environmental protection and oil spill response, following guidelines set by organizations such as the International Maritime Organization (IMO) and the United Nations Environment Programme (UNEP).\nMetropolitan Policy: Lagos State’s policies focus on sustainable urban development, environmental protection, and disaster risk management. These include measures to prevent industrial pollution and ensure quick response to environmental disasters.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Saving Lagos from Oil Pollution</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html#applications-of-remote-sensing",
+    "href": "Week4.html#applications-of-remote-sensing",
+    "title": "4  Saving Lagos from Oil Pollution",
+    "section": "4.3 Applications of remote sensing",
+    "text": "4.3 Applications of remote sensing\n\n4.3.1 Datasets\nThe oil spill data, oil well data, and oil pipeline network data are complemented by EO datasets such as SPOT 6 DEM and Imagery, soil maps, and land use landcover maps. These datasets are instrumental in mapping and analyzing the spatial distribution of oil facilities and incidents. The high-resolution SPOT 6 imagery and DEM, with resolutions of 20m and 10m respectively, enable precise identification of oil spill locations and the surrounding environmental context.\n\n\n4.3.2 Risk assessment\nFirst, using GIS-based Kernel Density algorithms to identify hotspots of oil spill incidents and high-density areas for oil facilities.\nThen, Digital Elevation Model (DEM), and soil map data can be used to assess the risk and vulnerability of different areas to oil spills incorporating land cover. Using a GIS-based fuzzy logic model (FLM) helps in generating oil spill hazard, vulnerability, and risk indices, categorizing areas by risk level. The output values were categorized into five classes: Very High risk (VHR), High risk (HR), Moderate risk (MR), Low risk (LR), and Very Low risk (VLR). Each hazard was characterized by its origin, magnitude, frequency, and probability. Fuzzification and fuzzy overlay algorithms were employed to generate a hazard model by integrating potential sources of events. Vulnerability refers to the level of exposure of both the natural ecosystem and anthropogenic establishments to potential oil spills.\nThe risk assessment is generated by the integration of the generated hazard and vulnerability maps.\n\n\n4.3.3 Policy application\nThe remotely sensed data and derived models support policy goals by enabling evidence-based decision-making. For Lagos, this means identifying areas at greatest risk more efficiently, accuratly and effectively, prioritizing resources for monitoring and clean-up, and informing urban planning to reduce vulnerability to spills.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Saving Lagos from Oil Pollution</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html#reflection",
+    "href": "Week4.html#reflection",
+    "title": "4  Saving Lagos from Oil Pollution",
+    "section": "4.4 Reflection",
+    "text": "4.4 Reflection\nEngaging with this data and its application in Lagos has been an enlightening experience, showcasing the power of remotely sensing data in addressing complex environmental challenges. The intersection of technology, policy, and environmental science opens new avenues for sustainable urban development and disaster risk management. This case study not only deepens my understanding of the challenges faced by cities like Lagos but also highlights the potential for remote sensing technologies to contribute to global and local environmental goals. It’s evident how critical remotely sensing data can be in not only understanding but actively mitigating the environmental impacts of industrial activities. I think the skills and methods applied here are not limited to oil spill monitoring but extend to broader environmental and urban challenges.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Saving Lagos from Oil Pollution</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html",
+    "href": "Week6.html",
+    "title": "6  Classification",
+    "section": "",
+    "text": "6.1 Classification and regression trees (CART)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#classification-and-regression-trees-cart",
+    "href": "Week6.html#classification-and-regression-trees-cart",
+    "title": "6  Classification",
+    "section": "",
+    "text": "6.1.1 Classificattion trees\nClassification trees are used to divide data sets into discrete categories, such as whether weather conditions determine whether it is suitable for golf. Decision trees classify data through a series of questions (nodes), each question branches out according to different answers to the data attributes, until the final classification decision (leaves).\n\n\n\n\n\nSource: GoPenAI\n\n\n\n\n\n6.1.1.1 Gini impurity\nHow can we decide which feature to use in splitting the data? This brings us to the concept of Gini impurity.\nGini impurity measures the likelihood of incorrect classification if randomly selected data were labeled according to the distribution in a subset. Lower Gini impurity values mean higher purity levels, making it an essential tool for deciding which features should split the dataset at each node. So we choose least impure data as root node split.\n\n\n\n6.1.2 Regression trees\nRegression trees are used to predict continuous numerical variables, such as student test scores.\nIn the regression tree, the optimal split point is determined by minimizing the sum of squared residuals (SSR) after splitting the data. The smaller the sum of squared residuals, the better the model fits the data.\nRegression trees vs linear regression\nBenefits:\n\nMore flexible and not limited to the assumption that the data is linear;\nCorrelated data is allowed\n\nDrawbacks:\n\nLack of interpretation\nNot reflect the influence of variables\n\n\n\n6.1.3 Fitting problems\n\nUnderfitting: a model is too simple to capture the underlying pattern of the data\nOverfitting: a model is too complex, capturing noise in the data\n\n\n\n\n\n\nSource: Bellini and Cascella, 2022\n\n\n\n\nFor machine learning models, we always want to find a balance between the precision of the training data and the good performance of the test data.\nTwo ways to prevent overfitting:\n\nLimit the tree grows: setting a maximum depth for the tree or a minimum number of samples in a leaf to split a node;\nWeakest link pruning: remove the least important leaves with the smallest decrease in impurity",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#supervised-vs-unsupervised-learning",
+    "href": "Week6.html#supervised-vs-unsupervised-learning",
+    "title": "6  Classification",
+    "section": "6.3 Supervised vs Unsupervised learning",
+    "text": "6.3 Supervised vs Unsupervised learning\n\nSupervised learning: Involves training the model with labeled data. For instance, by labeling certain pixels as ‘urban’ or ‘grass’, the model learns to classify other pixels based on the training.\n\nPattern vector: a pattern vector comprises all the spectral values for a pixel, which the model uses for classification.\nApproaches: include creating a training dataset, developing a signature file based on it, and then classifying the entire image.\n\nUnsupervised learning: not use labeled data. Instead, it automatically classifies the pixels into clusters based on their spectral values. Common algorithms include k-means and ISO data clustering.\n\nDBscan: utilizes two parameters, distance and minimum points, to determine clusters.\nISO data clustering: similar to DBscan but allows for iterative refinement of clusters, making it well-suited for Earth observation data.\n\n\nWhich kind of learning to use depends on the availability of labeled data and the specific requirements of the classification task.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#maximum-likelihood",
+    "href": "Week6.html#maximum-likelihood",
+    "title": "6  Classification",
+    "section": "6.4 Maximum likelihood",
+    "text": "6.4 Maximum likelihood\nMaximum likelihood classification (MLC) assumes that the spectral signatures of each class in the training data are normally distributed. For each class, it computes the mean and covariance of the spectral bands from the training samples. For a given pixel, MLC calculates the probability of that pixel belonging to each class using the spectral signature’s mean and covariance. The pixel is then classified into the class with the highest probability.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#support-vector-machine-svm",
+    "href": "Week6.html#support-vector-machine-svm",
+    "title": "6  Classification",
+    "section": "6.5 Support vector machine (SVM)",
+    "text": "6.5 Support vector machine (SVM)\nSVM is a non-parametric machine learning algorithm used for both classification and regression tasks. In the context of remote sensing, SVM is particularly valued for its ability to handle high-dimensional data and its effectiveness in classifying complex datasets. SVM seeks to find a hyperplane in an N-dimensional space (N = number of features) that distinctly classifies the data points into different categories. The optimal hyperplane is the one that has the maximum margin, i.e., the maximum distance between data points of both classes. Data points closest to the hyperplane are called support vectors.\nFor non-linearly separable data, SVM uses the kernel trick to transform the input space into a higher-dimensional space where a hyperplane can effectively separate the classes.\n\n6.5.1 Key Parameters\nC (Cost): Controls the trade-off between having a smooth decision boundary and classifying the training points correctly. A higher C aims for a perfect classification but may lead to overfitting.\nGamma: In kernel functions, gamma defines how far the influence of a single training example reaches. Low values mean ‘far’ and high values mean ‘close’. It affects the smoothness of the boundary.\n\n\n6.5.2 Benefits and drawbacks\nBenefits:\n\nEffective in high-dimensional spaces;\nWork well with a clear margin of separation and is robust against overfitting.\n\nDrawbacks:\n\nThe choice of the kernel and the tuning of parameters can be complex and require cross-validation for optimal performance;\nLess effective with very large datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#applications",
+    "href": "Week6.html#applications",
+    "title": "6  Classification",
+    "section": "6.6 Applications",
+    "text": "6.6 Applications\nThis week, I focus on the applications of machine learning techniques, specifically Support Vector Machines (SVM), Random Forest (RF), and Classification and Regression Trees (CART), for the classification of remote sensing data.\nThe exploration begins with SVM, where I focus on comparing its classification accuracy against other methods like Maximum Likelihood (ML) and Artificial Neural Networks (ANN) in remote sensing data analysis. This method proves to be highly effective in high-dimensional spaces, even when the number of dimensions exceeds the number of samples, although it demands careful parameter tuning and kernel selection, which can be computationally intensive for large datasets.\nMoving on to Random Forest, I investigate its performance in terms of land cover classification accuracy, training time, and user-defined parameters using Landsat ETM+ data. The RF method stands out for its ability to handle missing values while maintaining accuracy, and for providing estimates of which variables are important in the classification process. However, it can be slow to generate predictions when involving a large number of trees and deep trees, presenting a challenge in terms of computational efficiency.\nLastly, my study incorporates CART, used in conjunction with SVM and RF, for classifying vegetation in the Jodhpur region using Sentinel-2 satellite data. CART offers ease of understanding and interpretation and can handle both numerical and categorical data. Its main drawback, however, is its tendency to overfit, especially with noisy data, which can compromise the accuracy of the classification.\nThroughout my research, I notice a recurring theme: the choice among SVM, RF, and CART depends on the specific requirements of the classification task, including the need for model interpretability, computational efficiency, and the capability to handle high-dimensional data or missing values. This comparative analysis not only highlights the unique strengths and suitability of each method for different scenarios but also sheds light on the complexities involved in remote sensing data classification, guiding my future research directions in this field.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#reflection",
+    "href": "Week6.html#reflection",
+    "title": "6  Classification",
+    "section": "6.7 Reflection",
+    "text": "6.7 Reflection\nThis week, diving into how machines can learn to map out our world using satellite images really caught my attention. It’s like teaching a computer to see the Earth the way we do, but it can deal with loads of data faster than any human. Learning about how we can tell a computer to figure out where cities are growing or where forests are being cut down was super interesting and kind of important, especially when thinking about keeping an eye on the environment.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html",
+    "href": "Week5.html",
+    "title": "5  Week5",
+    "section": "",
+    "text": "5.1 What is Google Earth Engine?\nGoogle Earth Engine (GEE) is an advanced cloud-based platform designed for environmental data analysis. It allows researchers, scientists, and enthusiasts to process and analyze vast amounts of Earth observation data.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week5</span>"
+    ]
+  },
+  {
+    "objectID": "Week5.html#what-is-google-earth-engine",
+    "href": "Week5.html#what-is-google-earth-engine",
+    "title": "5  Week5",
+    "section": "",
+    "text": "5.1.1 Key jargons\n\n\n5.1.2 Client Side vs Server side",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week5</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#random-forest",
+    "href": "Week6.html#random-forest",
+    "title": "6  Classification",
+    "section": "6.2 Random forest",
+    "text": "6.2 Random forest\nRandom forests take the concept of decision trees to the ensemble level, combining the predictions of multiple trees to make a final decision. By introducing randomness in both the selection of data points and features for each tree, random forests mitigate the risk of overfitting while preserving the intuitive appeal of decision trees.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html",
+    "href": "Week7.html",
+    "title": "7  Classification II",
+    "section": "",
+    "text": "7.1 Dynamic world\nDynamic World Datasets are more than just data; they are new perspectives on Earth. The dataset provides a near-real-time view of the Earth through the lens of Sentinel-2 satellite imagery, classifying each pixel into a land cover type.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#dynamic-world",
+    "href": "Week7.html#dynamic-world",
+    "title": "7  Classification II",
+    "section": "",
+    "text": "Semi-supervised learning approach: By dividing the world into 14 biomes, the dataset applies a nuanced approach to classification, using both expert and non-expert inputs to train its model.\nTraining data and techniques: Approximately 24,000 image tiles were labeled, with a notable emphasis on achieving high confidence levels in classification accuracy. Techniques such as data augmentation, including image rotation and log-transforming reflectance values, play a critical role in enhancing model performance.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#obia-and-subpixel-analysis",
+    "href": "Week7.html#obia-and-subpixel-analysis",
+    "title": "7  Classification II",
+    "section": "7.2 OBIA and Subpixel Analysis",
+    "text": "7.2 OBIA and Subpixel Analysis\nOBIA shifts our perspective from pixels to the shapes on the ground, considering the homogeneity or heterogeneity of these shapes to better understand the landscape. Meanwhile, subpixel analysis digs deeper, attempting to quantify the exact proportions of different land cover types within a single pixel.\n\nOBIA: utilizing algorithms like SLIC for superpixel generation, OBIA provides a more detailed analysis of the landscape, revealing the nuanced differences between various land cover types.\nSubpixel analysis: identify the spectral signatures of “endmembers” to calculate their contribution to a pixel’s overall reflectance.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#accuracy-assessment",
+    "href": "Week7.html#accuracy-assessment",
+    "title": "7  Classification II",
+    "section": "7.3 Accuracy assessment",
+    "text": "7.3 Accuracy assessment\nTraditional methods, such as confusion matrices and kappa coefficients, lay the foundation. However, the quest for precision leads us to modern approaches like F1 scores and ROC curves, offering a new dimension to evaluate classification models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#spatial-autocorrelation",
+    "href": "Week7.html#spatial-autocorrelation",
+    "title": "7  Classification II",
+    "section": "7.4 Spatial autocorrelation",
+    "text": "7.4 Spatial autocorrelation\nTo ensure the generalizability and accuracy of models, methods like spatial cross-validation and object-based image analysis are employed to mitigate the effects of spatial autocorrelation. This ensures that our models are not just accurate but also applicable across different geographies and conditions.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#applications",
+    "href": "Week7.html#applications",
+    "title": "7  Classification II",
+    "section": "7.5 Applications",
+    "text": "7.5 Applications\nI explore the classification methods detailed in several studies, focusing on the comparison and analysis of different approaches like Multilayer Perceptron (MLP), Adaptive Resonance Theory Map (ARTMAP), its variant ART-MMAP, Regression Tree (RT), and the shift towards Geographic Object-Based Image Analysis (GEOBIA).\nThe study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.\nIn another direction, the move towards GEOBIA as a new paradigm is discussed, marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.\nEach method has its strengths and challenges. For instance, MLP’s effectiveness in sub-pixel classification is balanced by the need for extensive training and parameter selection. ART-MMAP’s improvements over ARTMAP for sub-pixel data highlight the potential for fine-tuned models to enhance prediction accuracy. However, transitioning to GEOBIA requires overcoming significant theoretical and practical challenges, including the development of new analysis tools and adapting to a fundamentally different approach to image analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#reflection",
+    "href": "Week7.html#reflection",
+    "title": "7  Classification II",
+    "section": "7.6 Reflection",
+    "text": "7.6 Reflection\nI am struck by the profound intersection of technology and environmental science. It utilizes semi-supervised learning and convolutional neural networks to not only present data; but also reveals a new way of observing and understanding the structure of the Earth. The dynamic world dataset particularly attracts me with its near real-time capabilities because of its potential to change the way we monitor and manage Earth’s resources.\nThe shift from pixel-based to object-based image analysis and the introduction of subpixel analysis are equally fascinating. They show greater precision and details in understanding the Earth’s surface. OBIA, with its focus on shapes and textures, and subpixel analysis, with its detailed quantification within pixels, both represent a large jump in our ability to interpret satellite imagery.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
     ]
   }
 ]

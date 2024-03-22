@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./Week4.html" rel="next">
 <link href="./Week2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -137,7 +138,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -149,13 +150,25 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">LiDAR</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Touch the Essense of Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Saving Lagos from Oil Pollution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week5</span></span></a>
   </div>
 </li>
     </ul>
@@ -182,7 +195,7 @@ window.Quarto = {
   <li><a href="#dataset-joining" id="toc-dataset-joining" class="nav-link" data-scroll-target="#dataset-joining"><span class="header-section-number">3.4</span> Dataset joining</a></li>
   <li><a href="#enhancement" id="toc-enhancement" class="nav-link" data-scroll-target="#enhancement"><span class="header-section-number">3.5</span> Enhancement</a></li>
   <li><a href="#application-of-corrections-in-literature" id="toc-application-of-corrections-in-literature" class="nav-link" data-scroll-target="#application-of-corrections-in-literature"><span class="header-section-number">3.6</span> Application of corrections in literature</a></li>
-  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">3.7</span> Reflections</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.7</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -215,9 +228,9 @@ window.Quarto = {
 <ol type="1">
 <li>Atmospheric attenuation: The absorption of electromagnetic radiation by materials in the atmosphere.</li>
 <li>Digital number (DN): Raw data collected by satellites, representing the brightness values of images.</li>
-<li>Irradiance: The amount of radiation from sun to the earth surface.</li>
+<li>Irradiance: The amount of radiation from sun to Earth’s surface.</li>
 <li>Path radiance: Radiance that is reflected above the surface.</li>
-<li>Radiance: The amount of radiation from earth surface to the sensor.</li>
+<li>Radiance: The amount of radiation from Earth’s surface to the sensor.</li>
 <li>Reflectance: The ratio of light leaving to light striking. It’s the property of the material.</li>
 <li>Mosaicking: The process to merge two images.</li>
 <li>Nadir: The direction pointing directly downwards from the sensor, with no angular deviation.</li>
@@ -245,7 +258,7 @@ window.Quarto = {
 <li>View angle off-nadir</li>
 <li>Topography contains not flat ground</li>
 <li>Wind</li>
-<li>Rotation of the earth</li>
+<li>Rotation of Earth</li>
 </ul>
 <p>The correction of EO data is realised based on the ‘golden standard image’ which is the true image using linear regression. There are two ways:</p>
 <ul>
@@ -314,11 +327,21 @@ Reflectance (field spectrum) = gain × radiance (input data) + offset
 </section>
 <section id="summary-of-corrections" class="level3" data-number="3.3.5">
 <h3 data-number="3.3.5" class="anchored" data-anchor-id="summary-of-corrections"><span class="header-section-number">3.3.5</span> Summary of corrections</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/flowchart.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="exciting-news" class="level3" data-number="3.3.6">
 <h3 data-number="3.3.6" class="anchored" data-anchor-id="exciting-news"><span class="header-section-number">3.3.6</span> Exciting news</h3>
 <p>Sounds complicated, right?</p>
 <p>A good news is that remote sensing products provide those corrections within them. Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) use second Simulation of a Satellite Signal in the Solar Spectrum (6S) radiative transfer model. Landsat 8 Surface Reflectance algorithm (L8SR) /Landsat 8 Surface Reflectance Code (LaSRC) use an internal algorithm considering the component of atmosphere.</p>
+<p><strong>However</strong>, the algorithms often rely on data from other satellites, such as MODIS, to simulate various elements in the atmosphere. If these data themselves are affected by the atmosphere, then using them as a basis for correction could introduce errors.</p>
 </section>
 </section>
 <section id="dataset-joining" class="level2" data-number="3.4">
@@ -349,14 +372,14 @@ Reflectance (field spectrum) = gain × radiance (input data) + offset
 </section>
 <section id="application-of-corrections-in-literature" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="application-of-corrections-in-literature"><span class="header-section-number">3.6</span> Application of corrections in literature</h2>
-<p>In the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.</p>
+<p>In the realm of environmental applications, atmospheric correction plays a pivotal role in enhancing the accuracy of remote sensing data. Papers are about various atmospheric correction techniques, namely Quick Atmospheric Correction (QUAC), Dark Object Subtraction (DOS), Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH), ATCOR 2, ATCOR 3, and the Empirical Line Method (ELM), applied to Landsat imagery across diverse studies.</p>
 <p>The study by Dewi and Trisakti compared QUAC, DOS, and FLAASH methods, revealing that FLAASH produced images with significantly altered contrasts, suggesting an effective atmospheric correction. However, the spectral analysis indicated that FLAASH was not as effective, especially for vegetation and water bodies, likely due to the specific atmospheric and aerosol variables prevalent in the Indonesian context. Conversely, QUAC and DOS methods exhibited more accurate spectral patterns for vegetation and water, with DOS particularly aligning closer to the Surface Reflectance (SR) data from the USGS, demonstrating its efficacy in producing compatible spectral patterns.</p>
 <p>On the other hand, Tan et al.’s evaluation of ATCOR 2, ATCOR 3, FLAASH, and ELM highlighted ATCOR 3 as the most accurate for Ground Reflectance (GR) and Particulate Matter less than 10 µm (PM10), while ELM excelled in Total Suspended Solids (TSS) analysis. This study underscores the nuanced efficacy of different atmospheric correction methods depending on the environmental parameter in question, with ATCOR 3 showing a high correlation coefficient for GR and PM10 data, thus suggesting its suitability for precise environmental monitoring.</p>
 <p>These papers underscore the critical need to select atmospheric correction techniques based on the specific requirements of the study and the inherent characteristics of the data being processed. While FLAASH demonstrated a visually improved contrast, its spectral analysis accuracy was outperformed by DOS in the Indonesian context, hinting at the method’s sensitivity to local atmospheric conditions. Meanwhile, ATCOR 3’s superior performance in correlating GR and PM10 data positions it as a robust choice for environmental applications requiring high precision.</p>
 <p>In conclusion, while FLAASH offers visual enhancements, its application in spectral accuracy is context-dependent. DOS emerges as a versatile and effective method, particularly for land cover analysis in areas similar to Indonesia. The distinct superiority of ATCOR 3 in handling GR and PM10 data makes it indispensable for environmental monitoring where precision is paramount.</p>
 </section>
-<section id="reflections" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="reflections"><span class="header-section-number">3.7</span> Reflections</h2>
+<section id="reflection" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.7</span> Reflection</h2>
 <p>Reflecting on this week’s content, I’m particularly fascinated by the complex interplay between the theoretical aspects of remote sensing data processing and their practical applications in environmental monitoring. The nuanced understanding of atmospheric attenuation, radiometric calibration, and the various corrections—geometric, atmospheric, and orthorectification—highlights the intricate challenges inherent in deriving accurate and useful data from satellite imagery. The notion that the journey of electromagnetic radiation, from its source to the sensor, is fraught with alterations by atmospheric conditions, terrain, and human-induced factors, underscores the importance of these corrections in ensuring data reliability.</p>
 <p>The methodologies and tools discussed, such as radiative transfer models (e.g., MODTRAN 4+ and Py6S) and the empirical line method, showcase the scientific community’s efforts to enhance data accuracy. It’s enlightening to understand that despite the complexity of these processes, advancements in remote sensing technologies and algorithms have made it increasingly feasible to obtain high-quality, corrected datasets. This progression not only makes remote sensing data more accessible but also amplifies its utility across a broad spectrum of environmental studies.</p>
 <p>From a personal standpoint, the aspect of atmospheric correction and its critical role in environmental applications captivates me. Knowing that different correction methods (e.g., DOS, FLAASH, ATCOR) can yield varied results depending on the specific context (e.g., vegetation, water bodies, atmospheric conditions) provides a deep insight into the necessity of selecting the appropriate technique for each study. This selection process, nuanced and dependent on the environmental parameter in question, exemplifies the critical thinking required in environmental science.</p>
@@ -757,10 +780,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Week2.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">LiDAR</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./Week4.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Saving Lagos from Oil Pollution</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Saving Lagos from Oil Pollution</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

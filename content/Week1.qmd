@@ -68,7 +68,7 @@ knitr::include_graphics('image/water.jpeg')
 ### Interacting with Earth's surface
 The Bidirectional Reflectance Distribution Function (BRDF) describes how light is reflected at different angles, affecting the appearance of Earth's surface from space.
 
-## Resolutions
+## Resolution
 
 - Spatial resolution: The size of one pixel on the ground.
 - Spectral resolution: The number of spectral bands that a sensor can measure.
@@ -85,6 +85,25 @@ Landsat and Sentinel are both satellite programs used for Earth observation. Lan
 
 If we need to compare the data from Landsat and Sentinel of a study area, the thing has to be aware of is the band of Landsat is wider than Sentinel.
 
-## Applications of 
+## Applications of spectral signatures
 
-## Reflections
+I explore the application of spectral signatures to roof materials. 
+
+The varied implementations of spectral signature technology — especially Spectral Angle Mapper (SAM) and traditional spectral signature analysis — demonstrate the flexibility and efficacy of this technology in tackling complex application scenarios.
+
+In the context of post-disaster management, as illustrated in "Integrating Imaging Spectroscopy (445–2543 nm) and Geographic Information Systems for Post-Disaster Management: A Case of Hailstorm Damage in Sydney," the application of spectral signature technology, particularly the SAM method, showcases its unique advantages in rapidly identifying the material composition of disaster-affected areas. Integrating with GIS data, the research identifies types of roofing materials and combines information such as population density and special risk areas, providing comprehensive decision support for disaster response.
+
+However, the application of the SAM method also faces challenges, primarily the dependency on accurate and representative reference spectral libraries. Additionally, despite SAM's insensitivity to variations in lighting conditions, field verification remains an indispensable step to ensure classification accuracy, which may increase the time and cost of the research.
+
+On the other hand, in studies focusing on urban roofing material classification, such as "Methodology for Urban Roof Material Classification from Hyperspectral Data," traditional spectral signature analysis methods applied to hyperspectral data demonstrate their capability in detailed identification and classification of various materials in urban settings. This approach fully utilizes the complete information of the spectral data, including shapes and intensities, providing a flexible analytical framework.
+
+However, this method is sensitive to lighting conditions and may require complex data preprocessing steps, such as atmospheric correction and normalization, adding to the complexity of the analysis.
+
+The application of the SAM method in post-disaster management highlights the importance of spectral techniques in rapid disaster response and resource allocation. In contrast, traditional spectral signature methods in urban roofing material classification research exhibit their strengths in detailed material identification.
+
+## Reflection
+The fundamental concept of acquiring information about Earth's surface from a distance, without physical contact, opens up a world of possibilities for understanding our planet in ways that were unimaginable just a few decades ago.
+
+The coverage on the electromagnetic spectrum and its significance in remote sensing particularly resonated with me. The explanation of how different wavelengths interact with Earth's surface materials, allowing for the discrimination between various land covers, is a testament to the power of remote sensing in environmental monitoring, agriculture, and urban planning. This knowledge is not just academic; it has real-world applications that can lead to more informed decision-making and sustainable practices.
+
+The advancements in sensor technology, data analysis tools, and the increasing accessibility of satellite data open up new avenues for exploration and innovation. While the current applications are vast, the potential for future developments is boundless. Whether it's enhancing our understanding of climate change impacts, improving agricultural yields, or planning smarter cities, remote sensing stands at the forefront of technological advancement in our quest to understand and manage the Earth's resources more effectively.

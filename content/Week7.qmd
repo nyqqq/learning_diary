@@ -1,0 +1,45 @@
+---
+title: "Classification II"
+---
+
+This week we embarked on a journey to the world of land cover classification, employing the cutting-edge Dynamic World dataset. This dataset, a product of semi-supervised learning and convolutional neural networks (CNNs), stands at the forefront of near real-time environmental observation. It exemplifies how technology can peel back the layers of the Earth's surface to reveal land use and cover.
+
+## Dynamic world
+
+Dynamic World Datasets are more than just data; they are new perspectives on Earth. The dataset provides a near-real-time view of the Earth through the lens of Sentinel-2 satellite imagery, classifying each pixel into a land cover type.
+
+- Semi-supervised learning approach: By dividing the world into 14 biomes, the dataset applies a nuanced approach to classification, using both expert and non-expert inputs to train its model.
+
+- Training data and techniques: Approximately 24,000 image tiles were labeled, with a notable emphasis on achieving high confidence levels in classification accuracy. Techniques such as data augmentation, including image rotation and log-transforming reflectance values, play a critical role in enhancing model performance.
+
+## OBIA and Subpixel Analysis
+
+OBIA shifts our perspective from pixels to the shapes on the ground, considering the homogeneity or heterogeneity of these shapes to better understand the landscape. Meanwhile, subpixel analysis digs deeper, attempting to quantify the exact proportions of different land cover types within a single pixel.
+
+- OBIA: utilizing algorithms like SLIC for superpixel generation, OBIA provides a more detailed analysis of the landscape, revealing the nuanced differences between various land cover types.
+
+- Subpixel analysis: identify the spectral signatures of "endmembers" to calculate their contribution to a pixel's overall reflectance.
+
+## Accuracy assessment
+
+Traditional methods, such as confusion matrices and kappa coefficients, lay the foundation. However, the quest for precision leads us to modern approaches like F1 scores and ROC curves, offering a new dimension to evaluate classification models.
+
+## Spatial autocorrelation
+
+To ensure the generalizability and accuracy of models, methods like spatial cross-validation and object-based image analysis are employed to mitigate the effects of spatial autocorrelation. This ensures that our models are not just accurate but also applicable across different geographies and conditions.
+
+## Applications
+
+I explore the classification methods detailed in several studies, focusing on the comparison and analysis of different approaches like Multilayer Perceptron (MLP), Adaptive Resonance Theory Map (ARTMAP), its variant ART-MMAP, Regression Tree (RT), and the shift towards Geographic Object-Based Image Analysis (GEOBIA). 
+
+The study on comparing non-linear mixture models for sub-pixel classification evaluates MLP, ARTMAP, ART-MMAP, and RT, showing how these models perform on high-resolution images. Specifically, with simulated data, MLP is found to outperform the others due to its strong interpolation capabilities and minimal error distribution. ART-MMAP shows better results with real-world MODIS data, highlighting its enhanced interpolation function which predicts mixture information more accurately than ARTMAP. Meanwhile, the RT model demonstrates limited interpolation capabilities and was less accurate, pointing to the challenges of applying per-pixel methods to high-resolution imagery.
+
+In another direction, the move towards GEOBIA as a new paradigm is discussed, marking a significant shift from traditional per-pixel analysis methods to object-based image analysis. This approach integrates spatial analysis techniques within classification tasks, overcoming limitations of the per-pixel methods by focusing on objects, their shapes, textures, context, patterns, semantics, and knowledge integration. It shows promise in providing more sophisticated tools for image analysis, especially in handling the complexity of high-resolution data.
+
+Each method has its strengths and challenges. For instance, MLP's effectiveness in sub-pixel classification is balanced by the need for extensive training and parameter selection. ART-MMAP's improvements over ARTMAP for sub-pixel data highlight the potential for fine-tuned models to enhance prediction accuracy. However, transitioning to GEOBIA requires overcoming significant theoretical and practical challenges, including the development of new analysis tools and adapting to a fundamentally different approach to image analysis.
+
+## Reflection
+
+I am struck by the profound intersection of technology and environmental science. It utilizes semi-supervised learning and convolutional neural networks to not only present data; but also reveals a new way of observing and understanding the structure of the Earth. The dynamic world dataset particularly attracts me with its near real-time capabilities because of its potential to change the way we monitor and manage Earth's resources.
+
+The shift from pixel-based to object-based image analysis and the introduction of subpixel analysis are equally fascinating. They show greater precision and details in understanding the Earth's surface. OBIA, with its focus on shapes and textures, and subpixel analysis, with its detailed quantification within pixels, both represent a large jump in our ability to interpret satellite imagery.
