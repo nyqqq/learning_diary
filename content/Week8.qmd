@@ -64,6 +64,12 @@ knitr::include_graphics('image/Mindmap8.jpg')
   - Combining SAR with optical data for enhanced analysis
   - PCA, object-based analysis, intensity fusion
 
+**10. Advantages**
+
+- All-weather capability, especially in cloud penetration
+- High resolution
+- Wide range of applications
+
 
 ## Applications of SAR combined with previous knowledge
 
